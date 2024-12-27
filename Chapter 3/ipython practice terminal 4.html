@@ -1,0 +1,1763 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="qrichtext" content="1" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'DejaVu Sans Mono'; font-size:10pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Python 3.10.16 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:19:12) [MSC v.1929 64 bit (AMD64)]</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Type &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">IPython 8.30.0 -- An enhanced Interactive Python.</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">1</span><span style=" color:#00ff00;">]:</span> import sympy</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">2</span><span style=" color:#00ff00;">]:</span> from sympi import I, pi, oo</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Traceback <span style=" color:#00ffff;">(most recent call last)</span>:</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ffff;">  Cell </span><span style=" color:#00ff00;">In[2], line 1</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ffff00;">    from sympi import I, pi, oo</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#00ffff;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">ModuleNotFoundError:</span> No module named 'sympi'</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">3</span><span style=" color:#00ff00;">]:</span> from sympy import I, pi, oo</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">4</span><span style=" color:#00ff00;">]:</span> x = sympy.Symbol(&quot;x&quot;)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">5</span><span style=" color:#00ff00;">]:</span> y = sympy.Symbol(&quot;y&quot;, real=True)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">6</span><span style=" color:#00ff00;">]:</span> y.is_real</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">6</span><span style=" color:#ff0000;">]:</span> True</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">7</span><span style=" color:#00ff00;">]:</span> x.is_real is None</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">7</span><span style=" color:#ff0000;">]:</span> True</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">8</span><span style=" color:#00ff00;">]:</span> sympy.Symbol(&quot;z&quot;, imaginary=True).is_real</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">8</span><span style=" color:#ff0000;">]:</span> False</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">9</span><span style=" color:#00ff00;">]:</span> x = sympy.Symbol(&quot;x&quot;)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">10</span><span style=" color:#00ff00;">]:</span> y = sympy.Symbol(&quot;y&quot;, positive=True)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">11</span><span style=" color:#00ff00;">]:</span> sympy.sqrt(x ** 2)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">11</span><span style=" color:#ff0000;">]:</span> </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">sqrt(x**2)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">12</span><span style=" color:#00ff00;">]:</span> sympy.init_printing()</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">13</span><span style=" color:#00ff00;">]:</span> sympy.sqrt(x ** 2)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">13</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAACkAAAAaCAYAAAAqjnX1AAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAJGSURBVFiF
+zZZPiE5RGIef7zNN/oySMhFWJEkmYWGakSal1DdqkrITW8XGgg0r5E9kMQtR
+lmSD2UyysJkajYVSNBaSBaMpo1GjMPNY3DO53bn3m3vv9w1+9dZ9z/u+5z6d
+895zT0Xlf1f1XwPkUUvJuhXARDNB6qnsSh4EDgOVv2FlIfcDgyVrC6sMZGuw
+b01myVQZyB7gWZM56qoMZA143GyQeioDuR740IR3nwFGgElgHBgAtqYlFoXc
+DrxsCO2P9gL9QCdRC/0CngIr52SqReycuqtgTV5rU6fVWjJWdCV3AC8aW8BM
+LSfa2S/JQBHItcBHYKF+9jeIWmk4GUj7LVaBmZTxGlFzL4SuAHuAbmB6TjSx
+/zV1VK2m9MwDdXGdnnpipL7EeEW9G2KXUuquqZ/VLVlzx52doWBG7UokLlPv
+zdP4HaHxX6uLEhCqt1Jqbs4HmISctSH1cmKsTz2W4wudXbGjwT8b/Pspu9Ov
+Tqo96uqYteWBPG205fGxO2p7Dsh16nf1vXoiAA6qrSm5WTqfB3JTSN4c/Kr6
+MAfgrF2MvXBIXVqgNtXSjqC3wCjQG/zdwPMCX+p47Pk4MFWgNlVZ5+Qjoost
+RLB5LxRHgKvAWPBPlkeLKWOJO42+1HZ1IOe2HFB/qK/UVeob9WesbUpbVqBq
+dDRcUK/nmKhLnVLfqWvC2KHQl0X6uRAk6u2wMj3zTNKhflU/qRsSsZEA2r1Q
+kL3qhNpSJ2ejOhbytqXE9wXI4UYgK5p5X1gCnAIuNqX5G9Bvwy03UB3oixwA
+AAAASUVORK5CYII=
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">14</span><span style=" color:#00ff00;">]:</span> sympy.sqrt(y ** 2)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">14</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAA0AAAAQCAYAAADNo/U5AAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAD2SURBVCiR
+ldIxK4dRFAbwh7KgxChZmZRBLD6B2eID+AIGLHajkpJvwGaUhWIw8wWYpEii
+CD+D+6/r/b+SU6d777nPc55zTqcH+a/1VveVJMrZZhNJXpOcBh2f9W0HVaz2
+I7xjqg724QXXLYTFknALaX6elM/RKjaAG9xiCD96SpKzcs5VsY0kY0lWkzwm
+6VJaKEqb5T2JN5yjp4NrkobxWcoMjvGB6RrXNqUrPGOpqO40MW2k3QJ+wh1G
+mpjmIOphDCZZT3LfhWhRmi9KF3Xzf5V3WJqf+WUzukid5rd/I3RI41jDHl5x
+if6/SMsl+wP2/VyhVv8C9ScEQ2TQcfMAAAAASUVORK5CYII=
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">15</span><span style=" color:#00ff00;">]:</span> n1 = sympy.Symbol(&quot;n&quot;)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">16</span><span style=" color:#00ff00;">]:</span> n2 = sympy.Symbol(&quot;n&quot;, integer=True)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">17</span><span style=" color:#00ff00;">]:</span> n3 = sympy.Symbol(&quot;n&quot;, odd=True)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">18</span><span style=" color:#00ff00;">]:</span> sympy.cos(n1 * pi)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">18</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAE4AAAAUCAYAAAAjvwuMAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAARbSURBVFiF
+7ZhtaJZlFMd/m1K+Yro1DEeUmJkb4TZ78cOiQCuLoki0LxFqSQb6oUSwl0+J
+QkV9y4yMEooViplg2ZskU3qzmWvNykpEnT0Nc83ci5v/Ppxz5/1cXvdTftmz
+QQduDs//XNc55zr3uc45z10iif/pwqm02A4MVRoqgdsI5IDRA2y3DhCw+DyJ
+pMH+zJR0VtJjRbK/RVKbpDFpfChk3BrgT2BdkeyvBSYCy9NgySBvDlOBA8Cr
+wJIi+tEKjAImA/0Qr3HXA28DR4EeoA34EJgfrJsP7AI6gC6gGVgFXJxh/G7g
+E9fXAxwDPgMeLeDwIqDE/QnpTqz+/Jdnhu+Z47/XAtXAW8BvwClgD3BDhh8N
+wOXA7AQYHix4GLsS/cB7wE9ABTDTD/iOr1uDBandjZ8C5jp+mzt4JqV3CbAe
+OA5s830VwLXAQuClDIdnuy+fR2Qd7utSoAXYlJJNAxYAjcBHwH7Ha5xPBb5y
+2RtAFXCHn3kK0BnY2u18DrADyGsO0yWdkXRCUlWkSFY6nyWjw5ImpuTDJW1z
+2RPB3r2SeiRVRPSWZxTl0ZL6JDUXKNz3ur3VAb7S8cUB3uB4TlJtINvssvqI
+nXEu+zLWHJZiGfiMv8GQjjhf5Hw1lkEJ9QGPA2eBhyL7+8jPwoTaIxjAJGAY
+drWzKLmC+wK8NgNPMm4h8E0ga3U+ImKnA+jGriuQX+NudP5+AUfTTn0akf2I
+BfhK4JIU/iZWXFuAF4F7gEv/xU6Z8z8KrEkC923Exz7guxQ2BruGh4HtEV2T
+nf+cYesEUJ78SAcuOejRAo4CjHOelQltwTqAF4AHMaeXA1uworwTq58x6nIe
+y4CEZmD19WAKSwJ0AGtC6bWlWKOLjRK1WGb9mmFrZMqnvMCddD6pgKO4crDZ
+JkaXBesS2ohldRnWETcAN2HFtiKiJ+e8LCIDGI9dnf3kB6IG68RZ13dvRNdY
+4CqgiXhQS7HEyqWBhJLONTfD0YSanN8ckU0BKrG3djIix/HtWAd/HZgA1EfW
+tQG/A1dn6Cl0TSG7vn0d0VWDxSIWVNyHvJeRDtw6rC48DUyPbK50/przp8iv
+U8OA513nhmDv7Zw/+sC5TDsdkQmbE8uxFxJSVmOodt4c4LVAL+dGkzTVOQ8b
+RkJJ/d+ZAOnDfI/Nai9jWbUVm+PKsDrUCdyCDYrPAiux4rsJ+AvL1Gpsdnou
+MNyAdaVG4BD29uqB67C3/HGGw5uB+7DZ8GAgy8q4Cc6r/ExHsKH8GiyYvRE7
+SeCyMu5WbJ7c+g8SmVlm+UyTk9Qr6ZikDyTNC9bdL6lRUqekbkktkp6UNCKi
+8xHZn+VfJJ32WbHJ562xBea0iyQdl/RFRLZPUr+kUQG+QFK721nhWJ3PYesz
+7LT6OUozZrguSe+m8WJ8bbjQZ5UfuqZI9pe5/bzBeLD/yQcbR37AatNdA2x7
+JDbX7QHmpQVD4bNSN/AA1g0H+kPmFcArwIpQ8DcqQ6jeqbKFXwAAAABJRU5E
+rkJggg==
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">19</span><span style=" color:#00ff00;">]:</span> sympy.cos(n2 * pi)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">19</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAADcAAAAUCAYAAAAp46XeAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAJQSURBVFiF
+3Ze7a1RBFMZ/G0PYJUEDa6EoEiQYK9dFES200FUrMWBaEUwhKSwUG1ME/wcL
+wUokhQriAxtFCCq+hV1somgwhWQlim9JhMTPYmZhcneueyfe1ZAPDufe87jn
+nJkzj5uRxGJFS4z8PDAJtP/DXHzYBAjoj9F3WX0vcBP4AYwBOwGQFKXNkn5J
+Ou7R/S31STot6Z6krzIYbuBzRVJVUodHt99+446kkqRuSdcllSV5i7sl6bOk
+XBOKq9hkvkkaTVjcFms36NEN2UFa6cgOSXorqa4t1wEl4BIwlXqTwTEbYykw
+kNDnCfACOAIsiegKwA2g6sjWAq+hfs0dBjLAxaCUk2MEeIVZJyG4AKzBDLyL
+AvAwIisCZagvrgTMAo8Cgzcb9y3f7cg6MLNUjth6i2sHNgKjmF1nIeGp5Tsc
+2QZMB1QcWR5Yjae4VZiedvt3oeALMI1pzRoKmBb/7siKwE/MBM0pLm/5p5gA
+45iRSkrD860kBh+B5c77GWB9xOY2kAVmAFodRW13zMZ8fAwzekkxEWCbBDkC
+d3C3uEnL8z5DYNd8MkoJLUAn8CbUqYYq8B7oSTGptNCDOaIqjQxduMUJuIvp
+6+708koFWy0fCXFqjbxfBg4Ae7GnfMrotQSwwvJtwDn7/AE44fHbgzl/rwVF
+i9zV2iS9k/S4CfdKJJ3SnzHu8VkmaUrS1dB4PuFJG6jYpAJD6ajNZ3uob0aq
+u+ZlgZfAc2BfUBukjxzmCHoA9IU6+35Wp4GDwDP+/89qF3AW/zpsCN/MLRr8
+BknwFP18OXWqAAAAAElFTkSuQmCC
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">20</span><span style=" color:#00ff00;">]:</span> sympy.cos(n3 * pi)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">20</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAB4AAAAPCAYAAADzun+cAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAChSURBVDiN
+7dQxDkFBFIXhj6jVViA6tdoGFDahlCgV9mADCvtQWIfkFaJSiUJ3FZ5GHpkn
+ExT+5GSmOHNvTmbuNCLCN2hmrjfGElucEFhXGVuZG8/Rxxl79J4Zcyeeoos2
+Jq+MuRNvUo25Eyfzb1y4jUCqKkclhcfHtcOlxvlDrsbDdwvV5Wfu+GPk/kBG
+paBTrgOsyv0RMxARObWI1xR37xUvgIBBtxpNLwAAAABJRU5ErkJggg==
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">21</span><span style=" color:#00ff00;">]:</span> a, b, c = sympy.symbols(&quot;a, b, c&quot;, negative=True)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">22</span><span style=" color:#00ff00;">]:</span> d, e, f = sympy.symbols(&quot;d, e, f&quot;, positive=True)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">23</span><span style=" color:#00ff00;">]:</span> sympy.sqrt(a ** 2)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">23</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAB4AAAANCAYAAAC+ct6XAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAEiSURBVDiN
+xdO/SlxhEAXwn6KdgYhEEbSIhVgJdpbBziq9hWDtC6RJY5eHSCMK+gYiol3Q
+aBGbgAFByB/EBS22EYw5FndvvG5EUO7GAwMfM2dmmDnfdCXxHOjuQM05rOIb
+mrjAPhaqpK6aJ36BcxzgK84wiLcYwDt86ETjvpadtvmHFRv4iYlONH4IR+hX
+bOAfjU+QR9hKW34/3mNXoe11hTuOHyWxpy3xGJePmOJX5T2JTQzhM9YUel/h
+NeZx+JedpC47THKZ5M09saUUWCx9dTUdbRXeuCf2Msn3Vny69Nd1x6U8Y+it
++AewjhH8xpcy0K7xU9HANmawhy3FCc1iB38Ud337f2rU+FWS5SSNJM0kn5LM
+J5lqrfljlf8/7/gObgCF0F2uWBTBfwAAAABJRU5ErkJggg==
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">24</span><span style=" color:#00ff00;">]:</span> sympy.sqrt((a ** 2)*(b ** 2))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">24</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAEsAAAAUCAYAAADFlsDIAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAM4SURBVFiF
+7djbi1dVFAfwz5iXRie0piizsiT0pelmVC9BFy166KHLS1FCBgVB4oMUBb1E
+D/0B9TJkkBXUgzLRSw1RUihpmVZgdiOFUHHKqUwUslYPex89njm/+k2ew/yC
+vrBZv99ae+2zztpnrf09py8i/I/uMG2qA/gvoZeStQ4HMKeFtR9FYGUXc5fm
+uQ9VDb2SrGtwP57D4RbWvzrLbV3M3YYRPIuBkywR0QtjNCJ+joj+ltbfHhFH
+ImJ6l/OvjYSnyvq+Hmjwi7ELL+LhFtafhUPYjusm4fclZmMR/qCdMrwPr+Fr
+KchxfIwHO8xfiT680UIsMIQZUnldifX4SSr3UVzWwe91XIRlhaLpZJ2Bl6Xd
++BDPYwMuwUt4osZnmbRzHzUcS4GlWS7EJql5r8WnWI73MK/Gb1OWy49rGu4N
+AxFxXo1+fkQciohdFf2ciDgWEV+02A+Hc//5MSKuqtjW1fWmPOZm29ZC1/ST
+9Rv21+j3YS/OqugX4LRsbwvFSfi41LfKeCHLoRq/X3BUKkVMLMPd0mPa7Xi1
+4n8mnpZKalwqr2LuYvxQmT+Y5XhNsE3EM0NKxB6Jx1VRbOzpHa5/EGcXf6ZX
+jN9J2ewWe0u/L5ca5rnYKjXIg/hd6lkr8FnF/8g/BHsq8ZASNRNv4VjN/IVZ
+7umwXn8pxgnJumUSgVXxitQob8LGiu2ZLD+p6A9kOagepxIPJ0pwdwf7nVmO
+1timSffzfVnRBC6UnqyNJiZqnhO0ocqg92EMSxqKo4riJKz2SpiPR/CN+mQt
+kSjNjkLRVLKKUlkk9YkCgxJ/ukAqgx0Vv8AHUl+4tKFYyiiSda+T3zkHpB42
+C6vUl+j1Wb5fKKpl+G8xJvGVm7EF70o7d3u+2J/Yqb7/rMfduA3fNhQP6d6G
+pBNwtrRRI1KC7sL5WI23O/jfKh1Qbx7XNMhnzsm8ZSxzqs0RsSJzm4iItR38
+ZkbE/ojY0jC/uiJfdzgiFkTEhoj4NY93IuLGv/GdG+ldcqSsb4sITnY8mW+s
+ShqnajyW47mhrO+FF2kSdfgKn+OOKY6lX6Ism3FP2dAr37OO4gGJWrTx8W8y
+uBjDWFM1/AXf6D/JNu7KFgAAAABJRU5ErkJggg==
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">25</span><span style=" color:#00ff00;">]:</span> sympy.simplify(sympy.sqrt((a ** 2)*(b ** 2)))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">25</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAABkAAAASCAYAAACuLnWgAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAHFSURBVDiN
+vdXLi89RGAbwz2iGyaVGmtzSxMKGcZsFS5RiydJiyiyt7JSyUf4DpaZGIbEx
+KRu3UCLGuBYxC5lYyLiUidQYj8XvTH379qOUn1Nvbz3vc87T93nfc75tSbR6
+zWq5wj8S2Y9goJUim0p+0EqRPnzHs1aJzMEaPMWPvxHZizMYwyQ+4z72NeH2
+okPDqg04j4/4iitY20xkAU5iFW7hGIaxEidwsMbvK7kHtzUGYAgPsQPX0SVJ
+NeYnWVLDJFmaZDLJixo+mMb6kGRjrXaq1A7VD/tTvEzyvoaNloMGmvA3l9rZ
+ul0LcRh3Sy+miwXBarytcDtKT8Zxqkm/3pXc2V4B15VmLcYIzuETpkpP+vGk
+wu/FbFzUfLJ6Sh6vipxGF7bhZm3DkZJHK9jMJXzdRAB2l3xlxr8Vxb9LTbzt
+SvKm1LdU8OMFO/qbQfmWZCxJ+wzYXTaMJemokBcluVxqU0k6K7WRgr9KMq82
+oVeTTCfZmcSMXRMaM70d93ANS7ELN/ATzzWeD2gvPXmEuXiMCxovwB4swwFc
+guondpfZnih34k6S/jL/STJU4a4v2GCS5UmGk3wpcTnJ1qp9bfkPP61fYdHf
+4OtxP0MAAAAASUVORK5CYII=
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">26</span><span style=" color:#00ff00;">]:</span> i = sympy.Integer(19)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">27</span><span style=" color:#00ff00;">]:</span> type(i)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">27</span><span style=" color:#ff0000;">]:</span> sympy.core.numbers.Integer</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">28</span><span style=" color:#00ff00;">]:</span> i.is_Integer, i.is_real, i.is_odd</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">28</span><span style=" color:#ff0000;">]:</span> (True, True, True)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">29</span><span style=" color:#00ff00;">]:</span> f = sympy.Float(2.3)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">30</span><span style=" color:#00ff00;">]:</span> type(f)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">30</span><span style=" color:#ff0000;">]:</span> sympy.core.numbers.Float</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">31</span><span style=" color:#00ff00;">]:</span> f.is_Integer, f.is_real, f.is_odd</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">31</span><span style=" color:#ff0000;">]:</span> (False, True, False)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">32</span><span style=" color:#00ff00;">]:</span> i, f = sympy.sympify(19), sympy.sympify(2.3)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">33</span><span style=" color:#00ff00;">]:</span> type(i), type(f)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">33</span><span style=" color:#ff0000;">]:</span> (sympy.core.numbers.Integer, sympy.core.numbers.Float)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">34</span><span style=" color:#00ff00;">]:</span> n = sympy.Symbol(&quot;n&quot;, integer=True)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">35</span><span style=" color:#00ff00;">]:</span> n.is_integer, n.is_Integer, n.is_positive, n.is_Symbol</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">35</span><span style=" color:#ff0000;">]:</span> (True, False, None, True)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">36</span><span style=" color:#00ff00;">]:</span> i = sympy.Integer(19)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">37</span><span style=" color:#00ff00;">]:</span> i.is_integer, i.is_Integer, i.is_positive, i.is_Symbol</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">37</span><span style=" color:#ff0000;">]:</span> (True, True, True, False)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">38</span><span style=" color:#00ff00;">]:</span> i ** 50</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">38</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+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
+0HNd0NWFjm+jk6TmoCs3tGFS2L/YcLwoL9/tWnVcG/ZfBzYolY8HTi39X17F
+weoXjx0AFwMfR5N/ApqcFwJbANejE7FS7LDqAHv/emXq0BSTOXNrrO33xkoB
+Sz5a+KsJ/XjCY4tHJpUnAQ4J57ye5gVErLnShFhuTYFHx+pul4fDrPGSml8F
+YuLFy3sp123o38dd5EqMni7qjwW68n8brNxqbZfHj94xgieOY7kyx/irgMUn
+ObjIK2NC9ablOOAK1OCpqHM+iD4+ugz4Qalu8VhsBL0LvAWd+X8/8Cl0BYA9
+eevjLY9MGZOD7GTUWVPQJdt2brHzKOAb6CoGs1vqxuqYjt6lnwXc1XLOWIyE
+fbGCg0fHb9EkmoregV+EBvcCdNm8haFe+fF/ql/a7ChwKvBH9BeFV4H70EQ9
+G03WUxLtsOrw9G9Xfu8Xk7lya3XaX6ApVgpYct7CX3Ww8EQd2myJlekiH78c
+9hf2qWPJlSak9lkMPDoGoV1eDusHa4zF1m+Ll5S89163ob2Pu7p2WeMlR3x1
+AQ8n1SGVW9va5fGjJ7+8cRzLlTnHXxafDAIXeWXegvJNywx0CbXfo3dji1Dn
+3It23H/QJC0eJT0f9ouAf1TOu4LRXx6ml8o9MnV4Gl0zfRa6hvolfeoeib63
++AD6DuKylnPH6CgeLz4CnBR5Phi9y5zUcHy9Uj2vjlXo48Fj0fXDZ6Nrcy9G
+f+Uqlpor34Vb/WKxIwYXhP0epTKPHRYdnv71+qSKtpjMkVu57O8qVtpyfgY2
+/qoihic8tnhkUnlyO/Q96cXor8BW1OVjHbzcaoFHx6C0y8Nh1njpIr/a4qUr
+3rNctyGuj7sYU1jjJUd8xaLra3EdZmDnVmu7PH605ldXcVxGlStzjL/A7pMc
+XOSVMaF801KsyT6/pt6rwD2h/k6h7OGwf6Hh3IUj1imVeWT64XGUOLbn7ZOR
+QB9H/xC9K55J3McFY3Ssi76Tty3wP976oaGTQ52fhv/L63oX9m/doGursH8k
+QQfopMCz0PX410EDZd9gx45oItxf065Yv1jsiEGRKBMq5VY7LDo8/ZvikwIx
+MZkjt3LZ33WsNOW8lb/KiOUJjy0pMl6ejJlQ3Q9N+VhGF9zaBo+OQWuXl4tj
+46WL/GqLly54r4y26zbYc9KbK9Z4yRFfFnTNr3XwcKs3jq1+tORX13EM9Vw5
+1uMv8PlkrLnIK2NCeSL+WmG/cUPdovy1sL8V7YStgHeUygtMC/teqcwj04Z3
+h32VbI9H3zldAOzD6EQkD6o6VqIEX4ed0UC5HXVg+RFkEWCz0IAqr64wEf3o
+zgp0ItQqp45+mA2sDfyK0VVPwO4Xix0xKB571q1sUYcmOyw6PD70+r1AbEzm
+yK1c9ncdK1Cf81b+KmDhCY8tHpkUnlwbzY9+/NGGtnzsklub4NExqO2qQxOH
+WeMlNb9i4iWV9+rQdN0GWx+n5IrVlzniy4qx4NcqPNxqbVfXY8O6/BqLOLaM
+Xboaf4H/emdpV67rnQ2l9Y8PCWsjLxGR91TWRv6E6HrWK0Rkw1L5pUHme5X6
++4T6L4jI+pVjVpltRD+kU12veZyMfqTqjsqxk0L5X0Vkgz7rQafoaNra1vvu
+4kNgbTrWqynbRUSWia7dPaXmuNUvVju2b/DF5iKyMMjMTbTDo8PTvx4Za0zm
+yK1c9ltjxZOPHv6y+sRji1fG68vZQe6aFju8ueLps/I2I8j3+y6ER8egtsvD
+xTk/LhkbL03bKUG+mvfea6qnjz25YtWTI768Min+j9Hh4VZPuzx+9OSXJY4R
+O1fmGH95fJKDi1LjsTUmy09arkDXdd4beBB993QJ+ihtf3QCzQmMvvsG+i7d
+rsCJ6Dt99wCbo+/UvYmuaFB95GWV2Rc4A70bfTTo3xSdmDQltPHwUv3PA98J
+57oNnTBXRQ+dvOTVkYKvAncC56GrUTyI9sdM9JHZiR3omIfezd6Hro29PTrZ
+aiU6EbLuVwGrX6x2HIzGz3x0mcDl6KSw/dC7/OuAMxPt8OjIAU9M5sitXLDG
+iicfrfzl8YnHFq+M15fFhOqLao6V4ckVb58dFDYY/V7A7qV6S9F3rb06BrVd
+4ONia7ykXFNi48UKTw57+9iaK1Y9OeIrRcbqf6sOz9jQ0y4P53nyyworV+YY
+f3l8koOLvDLxMVm5i1lTRI4RkbtFv6j5hog8IyLXisishruiDcId1GMi8pqI
+PCf6lc7d+txJWWSmiciPRGSBiCwNbXpRRP4iendcvQMu7pj74U+JOrx37MW2
+mYhcLCJPBfsfF5FzDXradHxT9OumL4jIytDPF4jIFi3ntfrSYseeIvIbEXko
+tOt1EXlW9KvIh4rISAd2eHR4fWiR8cRkjtzKZb81Vrz5aOEvr0+8+euRsfpy
+29DuJ6X/F829ueLtsza5XqKOQW0X4udia7x44ssSL9a89+RwSk5acsWqJ0d8
+pchY/e/R4RkbeuLSynne/IqNY8TOlbnGX1af5OIij0x0TI6IpK6EN8QQQwwx
+xBBDDDHEEEMMMXb4P020iS9whbiIAAAAAElFTkSuQmCC
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">39</span><span style=" color:#00ff00;">]:</span> sympy.factorial(100)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">39</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAB9YAAAAQCAYAAABDaZQEAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAABZ7SURBVHic
+7Z190G9VVcc/zwUSQ0AB8U7lqFwx0NsAlkhJPA+IWPgyROIfTdjNoJxxVKYI
+HSbjccoZzGJg6AXLtxCnZqhBglREskCEXlQqNYS891EoES8oL0K8eFd/7H2G
+4+Gc89trnb3X78zc/Z05c7i/c9Zv7bXWd6299n4Ov7MiIlRUVFRUVFRUVFRU
+VFRUVFRUVFRUVFRUVFRUVFRUVFT0Y1Pn3yvAG4GbgQeAh4AvAm8F9uiRfw9w
+HXAH8DBwb7z/PODAAZ1amQOBM4ArgP+OMvcBnwV+rceGNn4W+Fvgm8Aj8fwp
+4ORMOl4HXAzcANwPCHDZyHgANuJ9fcddC2QBTm/df0bC/aky2rhouWIdl0VG
+G5cNdDGZwklI52WDV8Xrd0Zd24HLgZ/uudfCScu4tPHX3m/1saUmafxrldnA
+lvela5hWj1ZmG8N2N8f3B77/x4APAv8bv38DuBB4xsiYLDINUmqLte5pxrUN
+vc885iKr7SXr3TJ4D2Xm1Aba2mKt+XPsj9rQ9AclOQa6XPGY66b0X6m+8uKv
+xZYN0uPhxd9tI2MaqtsaO8Dmq9K9mlWm9FrQGncPf3mvHTX10dJDeeR8GyXW
+gVY9DUrWVa2/tqGvRRZb5spjiw4rXzz6VcsaFcr3eBvo/GztKTS2gC5fto3Y
+MJYrXnsapeuxdlzb0PvLYrvHHpDFFrDXsNS4eOUj2OqeRab0npnnOlWbk149
+IpRfC1v1tJHSV3nt/3nI1HHtvrbMdVzVlkI6Vjr/x/qlhIJ3N3AV8D3gROCF
+hAJ6GqEQNngU+ALwlSizD3AM8FNR8TGE5oYJMm8C/oxQtD8DfAN4FnAqsP/A
+uAB+B/g9YCdwdZQ/CDgqfs85GXTcAhwBPEiYlA4DPgr8MsPYAJ5OCEYXDwJ/
+OCL7bOA/CRPx04AzgfeP3K+R0cZFyxVPW7Rx2UAXEytfQMdLCIuEc4B7gI9F
+uecDrwX2BN7ADzZbFk5axqWNv/Z+q4+1PNb61yqzgT7vPWqYVo9W5kjglB55
+CI35CcDfA6/uXNsCfA44GLgSuBU4Gjge+CrwMoL/p8o0SK0tlrqnHZfFZx5z
+kcX20vXOm/dQbk612A+22M+1P2qg6Q9Kcwx0ueIx11n7L42vvPhrsWWD9Hh4
+8ddStzV2gM1XpXs1q0zptaA17h7+8lw7anLe0kN55XyDUutAqx4oX1e1/rL2
+3Vpb5spjiw6LLR79qiW/wKfH20DnZwv3tbaALl+sueLR53nUY+24LP6y2O6x
+B2SN/Qb6+qKJi1c+gq3uaWU89sy8+nxLTnr1iB5rYYueNlL6Kq/9Pw+ZOq7d
+15a5jqvaUlKHiDTHKRKwXUQOan2+l4hcEa9ta32OiOzd+XdzvDve/6c917Qy
+J4jIa0RkU+fzzSLyjSjzi51rp8XPrxWRfXt07ZVBByJyvIgcKiIrIrIW77ts
+wL7m2IjH2D19x4qIfFpEviYi7426zsgoo4mLhSuetmjjoo2JlS9aXm4Wke+L
+yF0icnCPjU0MpnJSOy5t/C18sfpYw2OLfy0yFo551TCtHqtM33FT/J7X9ly7
+Jl57S+fzC+Lnl2SSQdJri7XuWcel8Vnpuchiu0e98+S9hiuIvtex1hZt7Ofc
+H2l97MExTa54zHXWOqT1lQd/rbakxmMZ/O07huq2xg6Lrzx6NWsMS68FLXH3
+8JeVWxquNIc257W9imfOI2XXgVY9pevq1PV29xjru7W2zJXHFh1aWzz6VWu/
+4tXjaf1s2TMsvT8xdgzliteehkc9tsZe4y+LDo89IIstFt5r4+KVj41+bQ3X
+yHjtmXn1+dqc9OoRvdbCU/b/Uvsqr/0/D5k6rt3XlrmOq9pSUEf74qXx4pt7
+vnBrvPb5nmt9xxHx/msT77fKnBtlLm59tknCZPA9EXmm4rs0OvqOtXhfqT+s
+v01EdonIcSKyHnUt+mO0RSYlLlO54mlLSlysMdHwxcLLl8bvunLg+v0i8sBE
+2y3j0sY/Z20Z87GWxxb/WmOi4ZhXDbPoyTW2Ju53isgenWuHxGs75MmLpH1F
+5MGof5+JMs2RWlssPJ4yLo3P2sdavC/nXKS1fRn1riTvtVwZO4Z6nRz2L4r9
+3PsjjY89ObYhabniMddZdOSMe07+Wv2VGo9l8HfIjr66rbHD4iuPXi0353Ot
+BS33L6O3TeWWhiuIPuctvYpnziNl14EWPR51NWd+jdWiqbbMhccWHRZbPPpV
+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
+AElFTkSuQmCC
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">40</span><span style=" color:#00ff00;">]:</span> sympy.factorial(200)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">40</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+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
+9kVA8wyCpb3q2QsrhwGRd3GZPliZ6HM+5V1cxf03xbnVabkHw3Kpdd9SnIsy
+XFTPadVqL4yMIhdSPYOhqOEr5h6Ir+Er6hm1yqjmBIi3SdU91lr3PCB+XlTn
+kKV5TtQzTqrnBFR73mnRq3FpejUuJ59LrXo1Lk2vs8qlVr1iuaSUcl6vTh2u
+HL13aUrpQymla1JKt5m0v6Jvf/XkfUYGKaWv6T97aUrpZjOff9Tk/4f+lcsv
+mjfDwarX8PrYBZmf7GV+wVGvcymlP0gp/UtK6af773mkwxg/dDSOt57o8rz+
+swsz3/Xi/rPvmrx/Vf/+U2ZkGFux9mOdE1Yvi8z9UkoPSSldNHn/0pTSW3q9
+vmpGjuHC2JilH5bLFSml26fOjo/6ds/eGDcrf8aWrX0o+LN+j7FjZh1bbIwZ
+L6sM68OY8VLYsUUvlvvSa22/s7a32Alr84xezBxa+1H5lRr9fYlNRsU5bD8M
+/0Oy+xVmr1fs2yXzYpGp2Udauee2Z/RiuVj9BGOPzHgp4nsFl+iYhV2/THxn
+HS+mj+jxHT5jY4pIGx76t8YgFhnGT5TGYLljZvVFqvyZGTOF7bP2svTyivGZ
+ebHyUNUbrLbCrBV2745e90jxeQQzZqw/YvZ7yzpmbfKQymvlXvn29BW5D1u5
+KGrSqnxIldeXxLgWG2P2IeseyayT6Domw52xY8ZemHWvisEsa0VVx7VyYfYh
+RQ2bHS/GV1htPzq/KeFisUnVWmFszGr3S685f++5zy/1MbxKcqjcPhTxLSOj
+yOuU58/WeVHk6Na5V9VOrDLKOnb0vCjOhVnujMwh2X1x9Dn6YEesf8nlz3Bn
+9FLEuVbuqjzSukfuUaOI4oKk2YtV904Ud4FUdw2j66xMH9Z5VMa61jE+Lbkq
+w111D051V6fEXnLbW7krYirFHqm83+KVr67NpXUerd+vyLuYsVKvxZruqqhi
+fNWdtlxbVM0Hw8OD9xJ35b1lxV1cVX4Wfc6nvIuruP+mOLc6TfdgFPlprXUD
+xo4ZLqrntGq1F6uMIhdSPYOhqOGr5l5Rw1fUM2qWiZ4TlU3ufQ63NmaKPU95
+Z9LCXTXGwyvyGSfWxqzzr9jzTpNejUvTq3E5+Vxq1atxaXqdVS616hXKZdrR
+3OsuvdDbUkoXj97/wv795y/IvSuldP3kPUbmotQF7v+bUvqkDH2RfArunrwZ
+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
+ubN3TToyH2L6AeLj9Skiayee8VENdUwvbPn7XHtheETHYLXkw1u1gNwxLtmH
+9qphs/EEk0PXijEX1iZV+YpnrONx9j6Atd/cPkr2h6jYKAeeNVkWe+Zpa1yi
+7lBsYc7nec+9V+2ElbHoVUM9fkm3AVHnwrWcXyz5YuU5ei68+Xueo0fHuar8
+jumnZI+MrFGouSzBey/eK2afg+IO5F516Sm84yPrPEbGuir/UmOuynJX3YNb
+Q4SfiD6PmYNHLaTmPVLVR+n+VTqXnrn9Erzie+X9jtrnfYq97hZ791N6dlXL
+ZieDWwAACfBJREFUfFj3huh16FnvVtzFVZ1DKM9qo8/sarj/ZsVpvwejzk9r
+qxvUcD9L8ZxWDqLshZFR5EI1PIOhqOHnIJdLdA1/DEU9o2aZPeYE8LdJ5T3W
+mvY89Z1J1TnkVj97PMsd+ZyAas87LXo1Lk2vxuXkc6lVr8al6XVWudSqVzyX
+lNLc6+GpwwsWPkdK6Wv7NteklD5l8tlXpJRuSCm9N6V0q0IZpJSe3cv9xOT9
+L+1l/ieldMv+vTunlD5xRt/bpZTe1H/PY8W8rRwYvZBSumNK6dKZ9y9KKf1k
+/x2vctRr/Druv+eRG+1yudx85r0vSCm9I6V0fUrpspnPX9x/93dN3r+qf/8p
+k/dZW7H0w8wJoxcj8yP9+3+5IOthX4yNMf1YuUxfR738swP4W2yZ7SOaP+P3
+FOuLtTFmvKwyVh9WsndF2jGjF+O/h1fuHsG0t9gJu9ezPCxzaO1H6Vdq9fcl
+Njm8jvt+veIcth8Lf2b9MnOyx75tnZdcmdp9ZAn3rfaMXoyMxU+w/ovhHx3f
+K7lExyzM+rXGd8x4MTGkYnxLY4oIG557HfXtcmOQXBmrfXmN19aYMXUQVf5s
+HTOV7ZfYS2SMXxJT5PKIzrcZW2HXSmkckjNm0fGBasyYMWbXvXUdW22SrTdE
+5dtrr+P+e7z2YYaLoiatyoei8/rSGDe6dmKZl5rrmAx3xo6t9sLwUMRgzFpR
+1XEtXNi9PjofZGQ88uFc22fb58p45fZbNqlYK1Ybiz57ZzgwfSDxOVRkbLRH
+rcm6TiLztBIukXcokOw+j1m/itoJI6OoY6vmRXEubOXOyLC+WHGOPn4d9fKW
+fXiLv+ocnRkvVsZqL4o8ktkjVTWKaC7KvVgRs1tsf487kBbbt3BR5h7WeVTF
+uswYn5Zc1cpdcQ9ujzuAUecxilqIwobZflT13JIzv5y5jM7tVfG9daz2uo8b
+Me+13i1m+lGcXUXPB8NDUWNT1bsVd3FV+ZninE9xF9fKRRk/n+V7MIr8lLUx
+65ipzkUtXFTPadVqL4yMIhdSPoOhqOEr5l5Vw1fUM2qWiZ4TlU0qz+EsY6bY
+89R3JqPPIa39zL2Oe1nPZ5wUzwko9rzTpFfj0vRqXE4+l1r1alyaXmeVS616
+hXI5l1LCDF4J4D4ArgTwgrkG/a9VvRjA/QFcD+B5AK4BcCcADwZwDsCjATyp
+UAYAbgPgVQA+s9ftzwHcDsBXAkgAvh7Ac/u2xwB+qP9lrTf3/VwO4EHoflH1
+Rb3c3C/ORvG2cmD0Qt/vT6P7peJ/AXAdgNsCOA/gsl7PLwHweie9xjgG8DgA
+jwLw1JV2uVz+DN0vn/09unG+M4AHovtl3Yehm4MpLgfwpz2n5wP4RwBfCOAK
+AG8EcG90YzLWmbEVSz/MnDB6WWW+EcAz0P3C8ZMBvBM3xqFvM4DhAthtzNoP
+wwUAHtq/AOBSAF+G7tfxX9m/dy2Axzjwt9gy04eCP+P3jhG/vgZYbIwZL0bG
+6sOOwY1XtB0zejH+e0DuHsG0t9gJu9czelnn0NqP0q/U6u9LbHLAMXzjHKYf
+K/9j2NcvYy+qeZzDMfLmJVemdh+Zy4Npz+jFyFj8BBt7Mfyj43sVl+iYhV2/
+1viOGS8mhpzDMXzHtzSmyNEL4PgzMYhVxuonvMYLWB8za8yizJ+tY6awfSA+
+ZmXaM/Ni5aHItxlbYdcKs3dHr3sgPo8A7GPGjDG77i3rmLHJY3D1hqh8ew3H
+8N2HB1i4RNekVfmQIq8vjXGjayeWeTlGnXVMlrvVjhl7Yda9IgabwzF88+Fj
+2O3FyoXZhxQ1bEaG9RVW21fkN165/THWbVKxVqw2dozYs/fS9W7ZU9gcKjI2
+UtWaFHmdMn+26KXK0Zn9UVE7YWQUdWzFvKjOhedwDN/zi2Nwvjj6HB0o8y9T
+jnP8j6E5Rwc0ca6FO6DLI617pLJGEc1FtRerYvbou0CA7q5hdJ3V2gdgn0dl
+rDuHY/j5l5pz1TkcY5m74h6c8q7OgKjzmGPE10LW+t5zj1Tebyk588uZy2PE
+5vaqvAuIv99R67zXereY6ecY8WdXcziG7zq08rC2HyOXu+resuIurio/iz7n
+U5zZMVxU8TNwtu/BKPLTWusGQPx5h+o5LaBOe2FkFLmQ8hkMRQ1fMfeKGr6i
+nlGzzIDIOQHibVJ9DgfUtecp70xauCvvT01xDN9nnNj1ZZ1/xZ53mvRqXJpe
+jcvJ51KrXo1L0+uscqlVr1guM79edaf+V6femlK6eObz8eujUkqPTim9JqX0
+rpTSB1NKb08pvTCl9ABHGaTuV02vSim9OaX0/pTSdSml56eU7jlpdz6l9Osp
+pTek7td4P5BS+q+U0ktTSo9IKZ1b+P5o3hYOrF53SSn9fErpdSmla3u93plS
++ovU/ers0i/DMnpNX8e9nmu/amvh8v0ppb/q5/B9vW5PSSl9+obcp6WUnp5S
++o+ey7+mlJ60wP184mzF0g8zJ4xeVplhvtbwRw5cGBuz9sNwyZE7OPG32DLT
+h4q/1e+dT/Hri7ExZrwYGasPY8cr2o4ZvVj/bdkjmPZWX8Tu9Va9rHNo7Ufp
+V6xjrPL3rE3O9e0V5zD9WPmfT/b1y9iLah7ZebHI1OwjS7lvtWf0Yrnk+omS
+2JMZr8j4XsWFWV+WeWS+3zq+JePFxJDR44vExxRRNpzL5+Agw/gJj/HKGTNL
+zMLMvSJ/VNk+ay9IsTE+My9WHkwf1n5YW2HWCmNfinVvXZOqMbO2L9nvc9cx
+Y5Pnkz1mjc63t+zNcx+2comuSbM8VONlmcsSm1fVTnLn5Xyqs47JcrfaMWsv
+zLqPjsGsa4UZr/PJbi8MF+s+xPShqAWwvsJq+8xascp45fZbNqlaKxYbO59i
+z95L1jsTt1h9d3RspKo1MevEyp+ZS3ZtKe5QMH7Suj+qaidWGUUdWzEvjE0y
+MlbujMz5xMeskefoOXKHQv4sd1av6DjXOvdeNpljl5Y9ktHrfOLtOJJLLXvx
+3Jgp6nnKO5DWebRwqSX3SOkj57FkDdd2/4CxF5XdM/YVfQ9OfVcn8jzGyr2U
+S6QNW/tR9DF+MbXG3Lk8n2Jze2XeZRkr9VqMnPea7xZb+zmfNGdX0evQyoPh
+beWuureMpLmLq8rPIs/5SnxKJBdV/MzYpXUtsmue4WJdk1Yute9be5+LTrmo
+ntOq1V5YGcUzQapnMBQ1fNXcR9fwrevL2r52GcWcKGyS4a6826O4J66aF8U5
+JDPGSzbh9YwTu76s88+0V8nUqlfj0vRqXE4+l1r1alyaXmeVS616hXE5l1JC
+Q0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0ND
+Q0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDw8nF/wOgbCDsZEAIVAAAAABJ
+RU5ErkJggg==
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">41</span><span style=" color:#00ff00;">]:</span> sympy.factorial(300)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">41</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+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
+lbIkXynLHk0pZfq57ez/x89PlRP+yez3rxt+/4Oz3z9v+P2LFr7rycPfXl9K
+ucPC379s4XfScY7DZ0kWyectw/c/3uD7H1FKuWcp5ZpSysXwvS/feP6RpZTv
+LKVcO/v99aWU9w30f8WARsqXVofj55pSyq+WUn6vlPLTw/c8zeh5lj1K/YRh
+8xq+NHYsHWPrs+ZfWvml9qLRi7cfP2H43Y2llLvNeHnl8LfLxjnWxAnNfF1f
+SrmllHJTKeXuC/M4ytkyjkYWzRxL7V4ju3a+jqXej1l8aWi0Po8i83vNmifx
+L429SPUo5QdF7r9SP9H4VWu889R7S54j0Yu3Hlv5qp1jRo4r8ROmbTH0WCv3
+9KOJQ1IaRjxl2T1jP6RZG6P6PMuONTQaXUrGYeWeLf5Vq0dWvUFjXy12XPu8
+xr4k38+Iw9K5ZeZrElm0YzD8RKr/yPstjR1r9mje+QGrniG1Y804TN1rcwrP
+NYWhF218aalPSHxM+vyx+O6HNHIz6tfe+Z3G7pl5FKseWyu7RhaNTbbknbW+
+xfQViR4Z5wNa3Wv8S/K8RnaGzY/fFfF8V6oPrfxS+/KuRY8fTb4m8WFGLNLa
+mGbOWPYi1T/rbMg719HGI8a+S2rLWttn5201viV9Xmq/jNjN1Id0zli5qtZO
+vPe0Gr5qabRro2afLZWDdQ7OyCcYe1qt/FLeGOdJUh+2rGFu8cXwYWbta/zU
+xjCpTbLWFan+WXGPrctItRbmvsv7HFmrR0YvqlSWpY9X74SmDlBDwzzrYNxt
+iNgjyqpjsuqSGj+R6qVFFomvtPTS145zTmuqRvcsvTDqWQzbZ9WAJLJIbZJZ
+Y1v79O73lcwvK7+3rJVb9qho7IXlJ+OHta7UzjOjd4a1DktpGP1pzL2Ktx+z
++5Nq7TgqX+PnWPxrray6PGP/JZ0vqT4inqcx7jIy7UQyx8z7PYw731K+WPU8
+jV+x6k0R+whY+xXWuxu869haG5Pqkp2zzz+We0KW7qV6YfUKS+Rn9hJE7KXQ
+yjJ+av04asxn5UgaWRj7tYi9qcwzVVbfhlT3ax+rvgXWmQzrHijj/U6sO2He
+NKw+tajvrNHOsVR+hk2y+qJYdzulc6zhjZEfW8bXNZ2c0/txor4TS2v7jPjC
+et+elC/N+qLxSYb8Utm1NOPHs76nmWPvOsr4N0YfCmOvw9rnMvoRIt7FYfLk
+1Uc1fiLeP2T0O2hoWvNcz7jKWIe0MU9i+8y6S8QecFZvGOtdRFL5Nfpn5Lks
+vjQ0jPUo8n147/O/yP13zPe2SeaMqcelj9Uaxnr/y7Fwesdrx2HWdRh3OaTz
+yzpbZ9SoWL2ajLMvVn7EuC/CyClY+6/xb979w4w7bGsfy/enMvbrzHo2w48Z
+vSsaWcaPd38+I76y+qMYNMlXynIOskTl65xkicpXypJ8pSxXvyxR+TonWaLy
+lbIkXynLDs2caO1zv4Ho9ZPf3TD87r3lSwtKdyilfKqU8ulSyu0mv7+2nDbg
+ny6lfFXl2JpxjqW9GeW+w7gfKKXcZva31u+/GL5bW0h51kD/QmOaGr40Opx+
+friUcmsp5eGllMMw3tZliNrnWfa49VnyE5bNS/mysOOaMdY+W/7VIn+tvVjo
+/mL4fks/funwux/YmLPfMphjCU/a+frW4btetfL3T5RSPumglz1ZLOd4ze41
+smtoUGR+zOJLStMa86Tryvi5GJ7V+LDGv7bipESPUn40fiX1E41ftfqil94t
+45DUTqz12MqXZo735nfvs5WvHkudn/SyLS891spd85Hma7U0LXqPZvc1sjDy
+osg+z7JjDY3GLlvHGT9euWetHFI9amRpofGMrZrnW/WuyQVRfOJw7dz2yNdq
+ZLEY42J4juUna/qPut/S2LFFXUqql1re1j6W9QypHWvGYem+RX7PNYWhF018
+sazJ9lq7WHKz6tfTz8XwjGd+12r3lnkUqx5rJfuaLNb5hHSO13yL5StSPfY4
+H5Do/lj8/rFnjew9bP5ieDbC+a5UHxby79kXoxa991lbUyzXLqtYpLUxzZwx
+7EWqf9bZECPX0cSj3vsujS3XPl/LV4tdTu092hnM1ly1yuypD8mcMXNV7Zx5
+10k1fNXSaOK81oa18zv/WJ6DM/IJ5p5WKr+UN9Z5ktSHrWqYe3xtfax9WDIG
+u7dSYpOa+Zp+LobnttYVqf6ZcY+py0i1Fta+q3c/xJoeGb2oFrJ45qsae6yh
+6XnOtWWPrLWeIT+rjsmqS7b6SY1eWmSxiN0163DtOOe0prbo3lMvrHpWi/wa
+G6vVi+Z5iSxSm+xVY5vz1LPWZGUrjLqR1Lase1SscwqPWilrXamZZ1bvDHsd
+9uybm38uhuc0/uKxV7Hga4233vfALHvzmL3Yx+Jba2X3kNTy1is/sj5/3fpY
+rRGMu4y97GRvjnvf71mbM1a9hVXPOxb/8xiN/FH7CBj7lfnnYvgO67tKrDq2
+1Masa3Re/Q1zvVv1/DJ0L9VLr17hPfnZvQQSvUj136MeUOPHUWM+CidH0sjS
+Y7/WYpMofu8eqnleo3v2XQT2vcatOevRKy7VfaT3O7HqWr1pLHtcor6zRjtf
+Er4YNmkt/5ofM9ciqY218lbDV8+8Yiu29qpx7M0Zy44Z8SVyb6dmDKmNWfKF
+YveuSZb8Gtlb5ot1zlQzx6w6CqMPxdrGlmRh7XN79CPUzleL7Uv4YfDk1Ue1
+9+l5/7B3v8MaTStfzPP7PT2ufTxyPa3t1+qRtS9m9ID36A27GOg93kVkpfst
+/Uv1GJmvVppaXUrk713T3pKfcf7Xez3SrF9eNuZ1h4vVtyS1S2s77t07XjsO
+q67DusvRMr+1OpTaY+9a65YsjDu7rF7onvePNfaiobG8L8Hq97GcL8s7bEsf
+6/enMvbrrHp2jzsNLfbV+992Yd1hk8rC6o9i0CRfKcs5yBKVr3OSJSpfKUvy
+lbJc/bJE5eucZInKV8qSfKUsFTTXog7fOfz875PfPXL4+SsAbp09/0kAbwbw
+JwE8ePL7hwL4egCvBfCHAB4L4McA/DCAh6yMrRkHAL4cwPcAeNbw/Y8AcJuV
+MZbwfcPPlwC4ZeHvrd/fgi8MP7/oTLMEjQ5H3BvAcwC8AMAbK8aSPM+yxy0s
++QnT5iV8jbCy460xlrDlX1r5JfZirXsNlnzy+uHnjQvPj797IIA7V3z/Xgyr
+5QnQzdd7AHwewIMA3G32t4cDuAOAXzUYZw1rsljO8Zrda2TX0Iyo9WMWX1Ka
+lpgnXVesoPGvvTjZEo+3+NH4ldRPNH7V4oueereMQ1I7sdZjC1+9fGsvX63x
+k9625aHHXvmalkaCSHZfC0ZeFNnnmXbM2nNbjMPIPfdgFbut6w3esVX7vFfu
+tQXrOCyZW3a+toQlWZg+AvjaY9T9llQOwL4uJUXvesYW1nxSOg5L91r5vdcU
+hl408cXS9nutXSy5mfVrDTTrvIXdW+ZRrHos4Ovz1mu9dI7XfIvlK1I9ss8H
+NLqX+lft8xrZe9u8Btb7rV7xbs2+GLXoPaytKZZrl1Us0kI7Z972ItU/62yI
+keto4lHvfRcgt2WrfpMpmPUZVi0asI/d0jGsYBnvGWfhI1h1Uq+atybOt9iw
+hU1anoMz8gn2nlYiv5Q31nmS1Ietaph7fG3Bw4drx2D2Vi5BU2exXFek+mfH
+vSVY6zJarYW17+rdD7GmR0Yv6ohIvV8jNHLU0vQ85xphdbdBOgbAkZ9Vx2TW
+Jb17oLSyWMXuvXVYMs45ralAv1omYLd2tcSXnv1/1jUgr7p/7xpblFqT517F
+GpJxrHtUrHMKaz9hrStzWNbzNHwx12HvvjlLWO9VLLHEW+97YJa9eexebM9a
+K7suX8tbr/zI+vx1C1ZrBOMuYwQ7WULv+z2A3Z1vDV/Mep73ecyIc+gjYOxX
+NNDohVnH9jzz2oN3f4NHz68EjH1khF7hJTB7CazgsffyrJ1FjfkAJ0ca4d1v
+1huMdw9Znqky+zZ63GscEfFdMmt8jYj2fidWXas3jWWPS9R31mzBqveK9c4x
+Rl8Uey3qmesvoWdesRVbI9Q4lsCyY0Z8idzbqR1jDlatGeCcGVrLz3ofSbRz
+JlYdhdGHYo0lWVj73J79CDWIeM7iee+DlYMy7h/27ndYo2nhq1dctVyHWviK
+ei9hCT17wHv3hu2B3Tc+hdSPGXmuB19WNHuolb93TRuw98meayvjrrKHjXne
+4WL1LTHeGbyFCL3jkd5Ny7zL0SveR7l3vgSrXk3W2RcjP2LeF7Gisbwvwer3
+kfK1Bcs7bEuwfn8qY7/OqmdHuNMgQe9/24V1h00qC6s/ikGTfKUs5yBLVL7O
+SZaofKUsyVfKcvXLEpWvc5IlKl8pS/KVslTQXIdlPBPA7QHcCcA3A3gYTkWO
+50ye+bPDz3evfMd7ADwawDcC+LXhd98y/PwQgLcB+HMzmjcCeBKAP2gcBzht
++F82e/a9AP46gP+08l0jvgKnovWtAF688kzL97fgOgBPHf77lx1p1qDR4cjD
+ywC8D6fDgD1In2fZ4xQ1fsK0eQlfI7R2LBljjj3/0sgvtZdW3bdizSc/Mvz8
++gWaGyb/fS8Ab934/poYVssToJuvj+JUMH0egHcC+EUANwO4B4DHA3g9/qgw
+3DKOVJaWOa61e43sGpoRtX7M4ktKo415Ur+3Qq1/SeOkNh7v8aPxK6mfaPxK
+64veereKQ9I47KFHLV+9fKsmX63xk5625aVHZr7WkuNJEcnuJWDkRZF9nmnH
+rD136zheuacEVrHbut7AiK3a571yryk847B0bpn52ogaWVg+AvjbY9T9llQO
+oL0u1YII9Ywpan1SOg5L9xr5GWsKQy+a+GJl+z3XLpbczPq1BtJ13sLurfMo
+Vj3W2+ct13rpHG/5FstXpHpkng9odS/1r9rnNbL3tHkNPM53e8S7Lfti1KLn
+qF1TrNZ5y1ikhXbOvO1Fqn/W2RAj19HEo577LkBuy5b9JlMw6jM1z1v2DljH
+bs0YFrCO94yzcIBbJ/WqeWvifIsNa+TwPAdn5BPsPa1EfilvrPMkqQ9b1DBr
++FqDlw/XjsHqrRzRWmexXlek+mfHvTmsdRmx1sLad7H7IabY0iOjF3VEpN4v
+QCeHhKbHOZfX3QbpGFpZGDFSIz+zLundA6WRpSV2S9Zh6TjntKYC3Fqm19rV
+El963NcAfGpAXnX/njW2SLUmz72KJSTjePSoWO07AXs/Ya0rc1jX8zR8sdZh
+Rt+cFaz3KpZY463nPTDr3jx2H7pnrZVdl6/lrUd+5HH+ugbLNYJxl7GHndSg
+x/0erzvfGr6Y9Tzv8xjgfPoIGPsVDTR6YdaxPc+8tuDd3+DV8ysBYx/Zo1e4
+BqxeAit47b08a2dRYz7AyZEATr9ZTzDePWR9pso6y+lxr3E6drR3yWzxNf4t
+2vudWHWtHjQjrHtcGGsro+ag4Yv1zjFGXxR7LeqV66+hx50EYD+2ntP7cdj9
+Hp5+PAXjHU+e79tr4WsOrzNDb/kZ7yOJeM7EqqMw+lAssSYLa5/bqx+hFhHP
+WTzvfbByUMb9w579Dls0Wr6YcdVzHWrhK+K9hBGResAj379k943Px97zY9a7
+TL350tJIUSt/5PvwjPO/yP13I7xtzPsOF6tvifHO4DVE6R2P9G5a5l2OHvWD
+SPfO57Ds1WSdfTHyI+Z9ES2N530JVr+PlK8pPO+wzeHx/lTGfp1Vz+59p0GC
+CP+2C+sOm1QWVn8Ugyb58qeJypeGJvnyp0m+/Gmi8qWhSb78aaLypaFJvvxp
+ki9/mqh8aWiSL3+aqHyJaK5deeCZAJ4N4Bk4FTl+eSCYbnTvNPz8+Mp3jL+/
+8+R3dx9+fj9ORYFHAbgDgPsCeB2AhwN4xex7NOP8HIBvx6n4fDucNu4/C+Dr
+APwSgPutfNeI7x6+75cAvH/h763f34Ln4DRfr8Vpzrxo1qDRIQD8XQAPAHAJ
+4LMV40ifZ9njFDV+wrJ5KV9Amx3XjrGEPf/SyC+1l1bdt2LNJ18z/PwRAHeZ
+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
+92nS59dkZ9q8Br3Od63j3Yga++pdix6xtKZo165esUgL6ZxZ2otU/6yzIUau
+o8nV2fsuqS179pvswbI+w6hFe8Vu6zFq4RXvvc/CI+S3S3xZ06zFees1WCOH
+1Tk4I5+IsKddk1/KG+ssTerDrT4vjfcMH/bc03vsV7Zs0ntdsYz5HnHPS5cR
+1qLe5z3Mc2TJfDF6UbfQo/dLY48amgg9koDN3QbpGEB/+b3OOmrHmaLX3Qtp
+DjaXxatmOOdLO845ralr8KplLsFi7bL2Lw/b71UDsqj796ixRaw1LYHRx7YH
+zTiePSotMdLLT5jxa4oe5zc1fM1hsQ5H6ZvbgtdexQK1vDHvgY3w6s2L0Idu
+VWuNUJdf4o2ZHzHOX3vlUppYFNlOJFiSnbWmRqjjMup5Vucx59ZHsAWr/YoG
+Gj9m1rGXYHXmNQUrHvfo+V0DYx8ZpVd4Dsa9egv02HtZ1c6ixvw9WORIzH4z
+Jhi9qd49795nOT3uNUZ8l0wtX5Hf7xShrmVN412Xj/rOmj1Y9F6x7nsw+qIi
+rEUeuX4t2HmFRa7PrHHMwbJjRnyJ3NvZMgaj1tyz999bfqve7Cj1vSWw6iiM
+PpQW1MrC2uey+xEs0PucZQlW9z5YOSjj/iGz30FCI+UrSlxlrMMavnrdS6hB
+rx7wiPcve9y3t8rbrPPcXnxpaaRYkj9CTRto98kea2vPu8oWNsa6wxWhb0lq
+l3vPX0294613dqOcMVn1iIzwPFtn11o9ezVZZ1+M/Ih9X4SRU/SqhezBe71j
+vHeSzVftOKx6NvtOgwYe9zM87tNa3mGT6oXVH8WgSb5SlnOQJSpf5yRLVL5S
+luQrZbn6ZYnK1znJEpWvlCX5SllqaEop4+depZTrJ/8/fq4tpfxUOeHNs7+9
+bvj9D85+/7zh9y9a+L6XD3/7+7Pff0cp5dZSysdKKXduGOc+pZS7LIz7taWU
+9wzPP2vh7yilPGX4+6tX/t76/ePnYnju5TvP/cTw3H9dGdOKRsqXRodLn8Pw
+PU+r5G/veYY9avzE2+Y1fGnsWCP79FPjXy26lNpLqx3X+ovUJ++48LtvKaV8
+tJTyyVLKDQZzrIkT0vn67uH5m0opf3pG85cHms+WUu7aOI5GFskca+xeI7uG
+RurHLL40NBY+jyJbVy6GZ/d8WOJfGnvR5hWSmKqJd9JYpIldLfHOU+8t64NE
+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
+AAAASUVORK5CYII=
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">42</span><span style=" color:#00ff00;">]:</span> &quot;%.25f&quot; % 0.3</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">42</span><span style=" color:#ff0000;">]:</span> '0.2999999999999999888977698'</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">43</span><span style=" color:#00ff00;">]:</span> sympy.float(0.3, 25)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Traceback <span style=" color:#00ffff;">(most recent call last)</span>:</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ffff;">  Cell </span><span style=" color:#00ff00;">In[43], line 1</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ffff00;">    sympy.float(0.3, 25)</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#00ffff;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">AttributeError:</span> module 'sympy' has no attribute 'float'</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">44</span><span style=" color:#00ff00;">]:</span> sympy.Float(0.3, 25)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">44</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+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
+g/AJSfAAAAAASUVORK5CYII=
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">45</span><span style=" color:#00ff00;">]:</span> sympy.Float('0.3', 25)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">45</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAACEAAAAQCAYAAACYwhZnAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAHSSURBVEiJ
+xZXPi41RGMc/90bJ4BpX3AWluRkTSkmaYsPCzsZf4B9QFvZshI1YkCxGzT+A
+nR+N3dgoZCGXZCZF41dNfmXIx+J93nqdzqt7UfOt09P5Ps95zvec9zzP21BZ
+bDQz3AZgAngFfANmgHPA8IC5zwBTwEvgK/ABeAAcB9rVwEZyE13gLrAOuA48
+AXYD+4AesAd436eIBeA+8Bh4AwwB48AuigOOh0BQq+OmBY4k/NngLyX8n8ay
+Gv5k5LpYclXnSDhfqM1k4Ur1k/pZHRpASG7siH1ul1z1TewPewv4mVztR2Aa
+WB7X+C84GPZRSSypOLeEfVqz+BlwABileHD94hiwAmhRvIe9IeB0TkQr7HxN
+spJfPYCAUsT6yvwGcBh4WxK5Eq1DI+ygjaUTazvAIWCEolR35kSUJ22Rx6ok
+blDMAVcpPmkbmMyJ6IUdrUmyOWzdm+kXsxS9YxuwFvitRLt9lOiX/1CiqHOx
+13DaJ/6mWXXVMXVpwo+pnczmzUqzms41qzJpqfKaekq9E/Oe2k7iZ8K3KeGP
+qt/VKfVy5JlQn0f8a3VrnQjUjeqVCFxQZ9Xz6ppMbJ2I7eoF9aH6Tv2hzqv3
+1BNprvQHtij4BQ0yu64QFgAFAAAAAElFTkSuQmCC
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">46</span><span style=" color:#00ff00;">]:</span> sympy.Rational(11, 13)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">46</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAADoAAAASCAYAAAAKRM1zAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAIBSURBVFiF
+5ZfBSxVRFMZ/TyNcCEJKheAmEARbSOQikOq5EEEEFf+ANvYHhJtWujGUdokt
+JcJVC0VEFEQFAxFcFC1yEWIhQtHLsIhMsq/FuTemsfdymvfuW/TB5c6c+e53
++C5nztzJSOJ/QEXsvh8YB54CnwABUwXWJ+VHcQE4Bh6k0BsDloFd4CuwDzwD
+hoDa35iSouO5DJ8lbbnrqRgnDT86bjt+NoXekaQNSZOSRiWNS9p06/YkNXhu
+fGFWUqOkjKSbp0iUlB8dC5JykipT6FXliY+4tQ99LF66q8ArVzKnQVK+Rw3Q
+Dsxh5fuveod54k/c3OgDcaOh0AWcBaZLpN/t5hc+cKZEif6GXuALsFQkvUGg
+GquUq0AbZnLUE8phtAroBBbIX3pJMYh1cY9F4Bbw3gfKUbod2O7PFFHzIpBx
+cx9wCfvMXPGEchjtBY6A+RJov8M2sAP7jj72D0IbrcQaxQpwUMI8b4CXQDNQ
+B+GNXsd2uphlmw/1bj6G8Eb7gB/AbBG0mrB3Mo4KYAQ4D6wDH+Fk1+1xg4jI
+NeCRu85hHS4Nfx17l/6EJHqdwH1gDdgGPmCd9wbWjN4CA7+UY0enYRXG6xT8
+Vhe7U+BIl0TvsqQJ2fk4J+m7pAPZWXdY0rmodkbhftPuAXfdbu+ESuoR0ugW
+8A1oCZUwipBGy4qfZECnITXvEX4AAAAASUVORK5CYII=
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">47</span><span style=" color:#00ff00;">]:</span> sympy.Rational(1, 3) + sympy.Rational(1, 4)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">47</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAC0AAAASCAYAAADPNlfiAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAIsSURBVEiJ
+1dZNiE5hFAfw3xhplEKU2VhYKKTY2FGG8pGMbytfRWOhJJQSxUbWRkmRWcza
+JGVIoSgrsSAW0jSjWEyKiImZY3Ef0zvj3vu+885b8q/Tcztfz/+e55z73KaI
+8L9hSsXzAUQVGS7IMy/ZLlXodqITj/ElxXeXcJmDQ+jBW3zHZzzBwUquUyuC
+XuB8QcJVWIPeAvuWlLSnQncGy/AV77GohDDswhV8wEP0y4qxHdewMfmEiJrk
+aWRoL7D3RsRgRDRX6NoiYmFENEXE6hTfXbLHmojYHBFTxulbI6I/xe+ICLUQ
+XpoC3o8j9UdmRsRQRNwoyVEL6TI5neI7I2JMTxfhcFqvy+/pTZiGmzXkqhc/
+0/oLVUlPxx6MyPoqD9vwDfcbwS4HU7EvPd+lOundmCUbwIEcews2JPuPxnD8
+CxexFHdwj+qkO9J6tcC+DjOM/Wo0EkdxAm+wd1Rb0vxLUvMPFAygNHxDaRjL
+ctUziEdSzKv0BRm1lVW62gA2YzMeyC6BRuIYLuMl2vBxjLXgLVsi4lNEDEfE
+/AKftlSJjhqqNpFKn0q+zyNibp5PUaV3Ybas+fMGkOymGsGtRpQ24axs8J5h
+LQbznJoi/4fpMVaiHbcLNhhAn+yKz8PWJNCK9XiXckuETlb470eXrBU75bdc
+H7ryjmdxDQO4IvkcLznmc1GOvgn6R0Q8ihqv8Ty5kJIsqDN+UlLUHtXwGkNY
+Xk/wZFEv6X+K36QuvER5VtHWAAAAAElFTkSuQmCC
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">48</span><span style=" color:#00ff00;">]:</span> sympy.Rational(1, 3) * sympy.Rational(1, 4)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">48</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAC0AAAASCAYAAADPNlfiAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAHPSURBVEiJ
+1dZPiI5RFAbw3xjJQllYsLWws7CxpJlRKE0ZbLEgKSWhrJQVdmIsrGQxdiKJ
+IYViq2Yho0gTpUmTDMl/j8V71Xjnm+nzvSN56vSee+65T0+9595zupL43zCv
+tt6GQdzHOwRDbfAsxXecacC1BLtxBc/wEZN4gF2/aU0y1UZS4X2S0eIP1XJa
+2Z6S29uAa2/JeZXkYpITSc4neVvil5J0JZkmujfJirLZ8weih5NMJOluwNWX
+pD/JvFp8WZIX5fzWJNPK4y6ell/ZLhajD9dKiXTKdadw/KjFx3Gu+D1Mr+lO
+sAkLcHkOuGbC1/L9xtyIHsAH3J4DrlaYjx3Fv0lz0QuxEcP41JBrJpzEStzA
+LZqLXo9Fqmfqb2A/DuEJtv8KNhU9gC+43pCnFfbhNB6jF29+bTQR3Y1+1a2f
+bKKuBQ7gLB6pBI9P3Wwieq2qi811aRzBKYyoBL+uJzQRvUX1pl5twFHHUdXF
+e4h1mGiV1FUbmDYXg2XYgOeq+UEhOVz8lxjDmhkE/AkX7MQFVYMa1LrkxnCh
+3kqPZXaMlbzVZX1wlrbcLle7+UlyLy1mj3bteCFZ3uH5RlYvj3Yxis9Y1cnh
+puhU9D/FTxCxqxRiBuwgAAAAAElFTkSuQmCC
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">49</span><span style=" color:#00ff00;">]:</span> r1, r2 = sympy.Rational(2,3), sympy.Rational(4, 5)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">50</span><span style=" color:#00ff00;">]:</span> r1 * r2</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">50</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAC0AAAASCAYAAADPNlfiAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAKUSURBVEiJ
+1ZZdaI5hGMd/87kmrXyXsgxFlI+iJBtLpPnmSHLoWJIcKI6IJF8HcuJkUVYb
+JUJRlHDohFqNsoM1Ix/DNrafg/t+9LxPz/vaZkv+dXU/XV3/5/4/13Pd13WX
+qfxvGJXjqwfuAW3Ad6AVaARWlnjPdKAPOJ/y7QIuAI+Bz4BAwx/0vIlxedae
+BI3JkE4Ch4D3wA2gE5gLbAV2AnuLbLyVkIDmlO8IsBjoIiRg/h8EJ/gEnM3x
+d/1+UhObofap7eq0lB91rQGtGX9id9ROdXSGM08tU9dEfkMRfmJvopWKKch0
+VczWM6Aj85UPgS/A1JwMVAJ1wFVCiaQ5I4K06BagF1gBTCGURoIaYCKhZLKo
+B8YBTcOkaTywB5gFfAVeAI9IJyST+v1qv9qhXlZPqNfVbvVeTtmgNqpdanmJ
+XzqY8shDq1qbxOURt6kfMqQWdXdObLn6JQovJWagoo+qdep0tUJdpF6Kifym
+Ls4TfUj9qZ5RqyNxmXo3bnoqE78l+vM+aCiii9npyG/Oik5e3JRDqlDbDN2l
+OuW/ovaolSMsem7kv1cLhsumuOad+m/Ac0J3WRp9o4HNwANCbx1JJN1sAhRO
+xPFxzWtraX9vXGuAyRQOlJFCMo1boVD047juA2ZmSBuBVUA38CT6dgD9wM1h
+ErYQmJTjrwIuxucGgDL9fWEaBdwF1hEGSTNh3i8glE4ZsB84F+PfEu4Kq4uI
+2BYNYAawgZCpJDmdwMFU/DHgMKE8X0cNcwhzoBy4DWwHerMFP9bQq5+qn2Mn
+6VBvqetTccvjwThQ4vAcszSy47pWvaa+Uj+qP9R36n11r+E6ULRPD8SOx41n
+D5H/V5Yuj8HgJdADLBkK+W8xVNH/FL8AtnxbZMe0EF8AAAAASUVORK5CYII=
+
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">51</span><span style=" color:#00ff00;">]:</span> r1 / r2</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">51</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAACEAAAASCAYAAADVCrdsAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAI0SURBVEiJ
+xZa7a1RREMZ/STQmPlB8baeksMqCWihGMBHFRlGxsBHxf9BSBAVFUURERdLZ
+CBaJBsH4BNFYCHamURHWQApFI4mYmLc/i3sCJ3fv3ZAl4AfD3P3OzOx3z5kz
+uzUq/xu1qc99gDn2rUKdAjAN3MhY2wXcB74C48E/B/bPBCzKSPoFXM/ghyuI
+OEzyQl0p/gxwHhgAHgUBa4GtwG7gMQBqbH3B0vxc9kQdUOsi7qgJXqgrMnIW
+zzwvhIiV6rh6J+Jq1ZI6oq6bq0bWcSwBjgMbgBGgF+ghOfMsHADqgQcRtxNo
+AjqBwRBTBMaAd8DbWRUydiILJbUt50061GG1IeJOhrxbam9GvdfxDqULnlX3
+qAV1qVpU29W/6h91cyq+Qf0dhMT8pfBlU+pnda+6XG1Wn4a1V3ki8uxqSOxK
+8YcCfyzFXwn8dIbwRrU/rLeoZXMiD+3Bt6b4I8AE0J3iB4MvAe9Ta6PAs/C8
+HcqHVR6+B78s4uqAg8BLktkS41PwQzn1ZkQ2zkdES/CliGsF1lA+oCC5TVPA
+JpKbk0Yx+D5gVk80q6sz+mFjaC7V0xF/M5x5IaeP7oacCyl+X2j0IXVVujHP
+qWMm0++2elntVEdDsW61PorvV99UaOb1kfie0NwdJjdm0mSilt2ONvWe+jGo
+nFR/mIzdE2pNFLstFD9VQQRhZ6+pX9QJ9af6UN0Rx81nPMd2MYhoqjJ/ltVo
+Vf8nPpD8LG+pJjmNakUsKP4Bet4JXL4dKPkAAAAASUVORK5CYII=
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">52</span><span style=" color:#00ff00;">]:</span> oo</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">52</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAADqSURBVCiR
+pdIha5ZxFIbx65nNYlFsdnknGBZlsgU/gkU/wzD5EQw228qW1iw2Mco2EFkx
+zKTC2sCBRSaW/VaewcufJT1wwn1zuA/n4kzof2rlGu95dVL9qfaqm7O/UR1V
+v6r31b2qsNwPcIaneILv+IAFzrGNx3iDI0xjwC62lvQCf3GKt8PsJ2yOJ6xW
+H5f0cbVT3a5eDrMH1WIMmKqR6o/qRnVn8FXTGPC1erSkb1UvqrPq9bzgqtar
+45HBQ/ycIa5jH4cz3POZ0Rpe4ct1EMMznOA33uHu7G/iGy7wGffR9A+PtFJd
+XIlL+Bvu2Q9mXsMAAAAASUVORK5CYII=
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">53</span><span style=" color:#00ff00;">]:</span> oo - 1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">53</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAADqSURBVCiR
+pdIha5ZxFIbx65nNYlFsdnknGBZlsgU/gkU/wzD5EQw228qW1iw2Mco2EFkx
+zKTC2sCBRSaW/VaewcufJT1wwn1zuA/n4kzof2rlGu95dVL9qfaqm7O/UR1V
+v6r31b2qsNwPcIaneILv+IAFzrGNx3iDI0xjwC62lvQCf3GKt8PsJ2yOJ6xW
+H5f0cbVT3a5eDrMH1WIMmKqR6o/qRnVn8FXTGPC1erSkb1UvqrPq9bzgqtar
+45HBQ/ycIa5jH4cz3POZ0Rpe4ct1EMMznOA33uHu7G/iGy7wGffR9A+PtFJd
+XIlL+Bvu2Q9mXsMAAAAASUVORK5CYII=
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">54</span><span style=" color:#00ff00;">]:</span> pi</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">54</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAC+SURBVCiR
+nZIxakJBGIS/J1bBJtZiHYhFkmtYWXmAVPbiCXKHXCI3sPUAzzxzAHsbEaw0
+n4Ur/G95kejAzyyzDP/ssIXKrWiF8xDwP9MOpi3wCUyAH+Ar3D0BY2ABzFHj
+jDzjI9NnSX9Xa/EAXhKXmf4W9b9MywbTAVgB5PHW6k4tgtZRf9XqosVNj0Af
++E4tXfAKFDFyNF2LVntnkykvYZC4umVTN/Ez0ANqRZTqUX3IyhmrG3WvTlWK
+e/7eCWw3o5C9ifMvAAAAAElFTkSuQmCC
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">55</span><span style=" color:#00ff00;">]:</span> sympe.E</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Traceback <span style=" color:#00ffff;">(most recent call last)</span>:</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ffff;">  Cell </span><span style=" color:#00ff00;">In[55], line 1</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ffff00;">    sympe.E</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#00ffff;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">NameError:</span> name 'sympe' is not defined</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">56</span><span style=" color:#00ff00;">]:</span> sympy.E</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">56</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAADhSURBVCiR
+lZExSkNREEXPMz+QBZhKyAIknQQbO0kWoCtIY5cNpLJLayGIpZWNhY3Y2Fi4
+gGgl2UAIqS0i5FhkPrxEP3wHhoGZN3Pe3Ekq/7W9ivw58AwsgRUwA8ZAAwA1
+94Z678Zm6o16pX5G7k791XQdxYlaZPmm+ha1w7zhWF2rjzuDSr+IpmGR7TEC
+EvAFXP6xZzdiSpl6C6BdQ7x+iW4F+rXia1teSp4i7tcgbak3DdpZBeEkTkK+
+0wB4AgrgBXhnc/wD4AhoAp1dEmpPfVDn6re6VD/UW/W0fJeTatsPsx8XQJq2
+jm8AAAAASUVORK5CYII=
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">57</span><span style=" color:#00ff00;">]:</span> sympy.EulerGamma</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">57</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAA0AAAAQCAYAAADNo/U5AAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAADwSURBVCiR
+lZK9SkNBEIW/K0ERLEwviIpNOsHO1toij2FlFyx9BhF7W1vJK0jS2AqCjZVY
+RIKg4M9n4VxzXeYSHBhmd845nGF2K5X/xkLj3AfegRGw3sI/AUR/c08d+hNn
+jX6dm+qrOi6BJfVFHSWiK/VT3S0B1LE6LXoHMcG5Sia6CMJa3JfVe/VJ7ap/
+FlHHbdRe1GNgAxgAEyB16ofTkbqlvqnXalVzOnOc9oEOcAjMHjRxWlQ/1Ek4
+npacTIR6F4JHdbXEs0U0RxwAzyXYJuoCX8BlBlbJh62AKfDAbO1znbaBFeCm
+ZYpUtBO1VfQNQltAuR2UnIYAAAAASUVORK5CYII=
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">58</span><span style=" color:#00ff00;">]:</span> I</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">58</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAAYAAAAQCAYAAAA1Qw7OAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAB1SURBVBiV
+dY7BCYNQEAVHCQimB1sQgg2kpZRhW7l5+HpLITkEAmFyUfnK/oVl4c3CvEol
+mjpMC+ABGIEBoAocHdBGIHTcAYHxDG7rnUsgoeb7Ut9qnYdX9ac+1YO8X8uk
+c6tdXAIJIHcs6ke9qDto1K86bY9/t09gimk9WdEAAAAASUVORK5CYII=
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">59</span><span style=" color:#00ff00;">]:</span> (1 + I)(1 - I)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Traceback <span style=" color:#00ffff;">(most recent call last)</span>:</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ffff;">  Cell </span><span style=" color:#00ff00;">In[59], line 1</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ffff00;">    (1 + I)(1 - I)</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#00ffff;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">TypeError:</span> 'Add' object is not callable</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">60</span><span style=" color:#00ff00;">]:</span> (1 + I)*(1 - I)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">60</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAHYAAAAUCAYAAABYm8lAAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAALsSURBVGiB
+7Zk9aBRBFMd/lwRNiKAQC0EIFpqIjTER0UJJMGolCqaxEILWNsFGK2urgI2k
+MUoQLURtbSKKoigaLAyiYmyMRPFbkkLzt5gJWcbZ2cvH3O0t/mGYu/f2vXu/
+m723u3MlSfxX8VRX7QL+K47SFvYyMAU0V7CWpWgAEHAU6LKvT5QRV8ucEGKV
+5I7tkmYlDTj2PknnJd2T9F1GI574aowrtp42+/6GpElJqwIxaZx5ZnU5U1l9
+wbclfZXU5NjHbNIfksZzBIukVkmbJZXs+x22vjOBmDTOPLO6nKmsbmCbzFk8
+5EnaI2mTTdqdI9i0MS7pnaR6jy/EGYu13+bprgSre409DpSAa57+Pgq8sj09
+T+rB1HTOsV8FWoFeT0yIE/LJmsYJHlZ3YXuBP8DDWNVFUKednzn2+3be54kp
+Eid4WJML2wx0AOPAryilxdEc8FPH/tjOexx70TjBw5pc2PVAPTAZp65o6gR+
+YlpnUt+AGUyLSqponOBhTS5si52/RCsNJjDXiXLHSEa+ZqANGANmPf7PwFrH
+Vi3Oi9Y36vENZ+TL4gSHtSHhmLZzY5nFL0ZvMGdWuXqf4d+KOTl97QmgiXmu
+OVWCcxBY49g6gEPAJczCJzWWkS+LExzW5MJO2bmFeNq7zPlCNxR1mC/3rWOv
+BOegx9aPWdhh4M4C84U4wcOabMWTwEegfYEfWk2FbijaMY807q+haJzgYU0u
+rIC7mD69MUZ1EdSJae0vPL6ddh517EXjBA9rg3PAdeAIcAB47fgO2wGwzs67
+mL/wfwJOLbTiJWglsAVzlv72+PdjnlVveXwhTsgXaxYn+FidrakVkj5IeuTZ
+tjqrsCYibJWFRpf93Ase32pJ05JupsSGOGOxLnZLMcSZyuo78LRNtG0Zvvxq
+jZOWYXfgmCJwprKWpH+2QxuBl8Bz4OBy95UKqAnzWPUA6AscV+ucEGD1/dE+
+AxwDnlA7f0AntQEYIvsaWOucEGD9C9mW1oq4SFAYAAAAAElFTkSuQmCC
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">61</span><span style=" color:#00ff00;">]:</span> sympy.simplify((1 + I)*(1 - I))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">61</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAADYSURBVCiR
+lZKxagJBFEWPki8wIfg9aaxS5QMsTBEQxC4gBOzSpLMXGzvBKn2KlIEUImks
+xMJaqxSJnBT7hN1BXXPhMsOdOW/mDVNR+a+qufklcA9MgQXwDWyBd6BV2Kvu
+/WCmtTpWn9Whuol8olbUAnSj3qrVXIZaV1cB3qXQKfcCGqiFnk7pJ8bftKdj
+vlBncVLj3Ou9BPC6z8qATgBfau0cqB3APF6QMqgbwEy9TtcPAY8BfKpXh4qm
+wVMAH/keUmffIlMTGAE7YBD/LtUSGOUr9C3Xm8of4ojiVhoDs5UAAAAASUVO
+RK5CYII=
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">62</span><span style=" color:#00ff00;">]:</span> x, y, z = sympy.symbols(&quot;x, y, z&quot;)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">63</span><span style=" color:#00ff00;">]:</span> f = sympy.Function(&quot;f&quot;)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">64</span><span style=" color:#00ff00;">]:</span> type(f)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">64</span><span style=" color:#ff0000;">]:</span> sympy.core.function.UndefinedFunction</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">65</span><span style=" color:#00ff00;">]:</span> f(x)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">65</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAACMAAAAUCAYAAAAHpoRMAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAJTSURBVEiJ
+zZZNSFRRFMf/M4Y4jGVg7YyEZNBFSR9ERK2Sgpa2chEE0qYPgogiIXLRYiCD
+qJ0raSOBUSCBuAlaRB9SUVC0M4iUETJaOKHVr8U9D17Xe980zqIOHO47n/f/
+zj33vJcD9L9Q/l8DSFMMzAZJtyTNSlqWhKRLZrsjqSKpuMY9d1u+wVUWIMST
+OHoIXAOGgR5gD/ALOB+J+1u+D8wBrWl9yLHbgEwFbNPAV6DQIJi9tsdQLTCn
+zPGkpy9ZVUYbBJLwe+Aj0BQCc4w4dQNlez4UqRhAv6fPAWNmK3u2q6Y/EgKz
+H9cbFWDFnoctqAmYAX4AxQCYXuAn8C79psAN2zBUzT6zjYTAyBItAW88fdGA
+vA0kTTipwAmTh0y+C+QD/m1mfx4Ds90cxjx9yfTTGWA6gCowC5wx/ymgOSOm
+Cswnsj9ndtn60tO327qYMT8+Sbopaauk25KeSOqXm1Mx+iJpUyLEwLzy9FVb
+WzISS9JC6nlQ0lIN/0IqdxAMkl57+oqt7YrTgKQRSfMmn6sBJC9pYyr3Hz2T
+A74BHwJnm8PdsoXI2R8Flq3BN+NmyApuJMT6pcf66l6oZ0qS1mv1Ecmq9Vju
+fLs82wFJE3I9c1juqK5IWiepnFGZfbY+ClVmwJBejLxJYj+d0vXiPg9zwDbP
+/4X5H4zkG8eNiy2hq33dgvsiwc12DZ+Z3GXyIrAj4J8MtacBW5td6wdpfew8
+Y3zZNthZZ5zPZ0NVqzdJC+7jNtkAkALwGZjwbfX+6X2XdFzSjNb+c9UpaVTS
+Bd/wG1sqcXMcbehnAAAAAElFTkSuQmCC
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">66</span><span style=" color:#00ff00;">]:</span> g = sympy.Function(&quot;g&quot;)(x, y, z)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">67</span><span style=" color:#00ff00;">]:</span> g</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">67</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAFMAAAAVCAYAAAA6s9JxAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAARRSURBVFiF
+7Zh7iNRVFMc/sz7YXMMKSpMwMPPxR2X0wEKDaCsoIrAiErK1QIi0KBVK6PFH
+uFkRSKZEUZZRWVpZBmlGWG6YlQuJaZShRfnIlHxn2qc/7ln97TC/mVlnIo0O
+HIZ7Ht977rnnd++5U1D5n+pDDf92AP8lqlcyXwa2Ak11wjvW6QJA4I6ssFCH
+z/xCYCUwGXiqVrDjiN4GRgBnA7uhPpU5DdgJzK4D1vFErUA/4O4OQa2VORhY
+BzwPjK8ptOOT1gK9gIHAoVKV2QjcD3wD7Ac2AlOBbsAu4OuM7e1AAZiXM9kS
+0tkyukheAOaE7rEuLmBS+E3K0Q8B/gA+6SIuQFtg5/GyIvvXgQFAM0D3ImUT
+sJR0FnwFzAD6Ag8Bw4DeQHvGvhk4BKzICW4KsAp4FFgYtgBPArcBz5E2riu0
+PH5H5OifJm38hC7iQjoHPywhH0dK2sdF8rb4vRJYjJrlV0z0oFrIyK/wCN0T
+sib1oLq6CKOY54RfS4ynxnie2lDBtxT3UPeqP5bQ3RTYM44CN4+fCMwXS8Tb
+J3QrVbKKEaF4Jwd0Y+hHxXhwjJdUCOYMdZ+6QZ0QPh+oPWtY4LLA6Z+RNak/
+qVtikbUmsaDOinlm2rm4srxP3VyczLnheFGO0yr1L/XEGF8S9vOqCKzVI9Sm
+9qpxodMCa3RGNj1kLTVio3ZTXwq86RVsfzZ9oZ2SuUXdVmYHNqnfZsbDY7KF
+VQR3XyaZQ+uw2GuLFjpUPaB+Vib+armH+mbgP1yF/XZ1VzaZjeHcnuMwNPSv
+ZWT9Q7a8wmS3mCp6U9jPrkMyTw7MZTFeqh5Sz68Rt1FdFHFOqsK+IeJYn01m
+d/VP07lWyumFmGBKRlZQt6q/lpnsGlPFrFZPVdfGPPWozjXqHnVMxDarRrwm
+9aNIzp1V+gyLuRdkk9kRnKabOyu/yyNUrJsf8kElJhppunV/UE8P2Y1hn3fJ
+zQl9SxULeTZsd5k29JQytpVw+5jO8oPq2C5swLjAnaB26jNbgbnA+6QmfDMw
+kvT2XEdqhlcV9VkLgBuAq4HvM/LzgEXA79GDbQr5fOBL4HpgFPBpEV7HI+Jg
+iV6vmNpIr67ewL3A9jK2lXBfBS4l/ccwEHikhE0r6TGQpatIvfNCgOJMTzR9
+/wdMfdwz6pnqb6bbvNi+p6kt+DwjGxSyHeq5JXyaYzdXlNC1qztNZ2KlqhgV
+OCutfOmUw22I6i5HW3KqeZ+Zr6yaUr41ACfn6B8Ifa2H/0mmS+TxKu3fDfu8
+Vu5ocavlibHujr77cDK7qaeVcGhWd5uqtHcOaKOpoX+vxuCuU/er/aqw7bh0
+ZtYZt1o+Qf3FdGcclnf8a3QO8AWwGFgP9ACGk87MbXE2tJNPlwGXk97ce8rY
+1UIDgDHAWcBY4DvgYmDvPzRfORoG3Ez6s2bDYWlkdYj6lqmb32+6hdeYmuK+
+df48jpbHRzXuUN+w81PymOC/AVQ8xx4yugNwAAAAAElFTkSuQmCC
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">68</span><span style=" color:#00ff00;">]:</span> g.free_symbols</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">68</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAFEAAAAVCAYAAAA+RgJMAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAO1SURBVFiF
+7ZhbiJVVFMd/M9OUpWUKgVlZhJRdUIOwiAwJAylCsHrQh5peilC6DYL0Mj5k
+JjVQJGYINYEEZZDBPEQZOeWU2BUs7CEiuqASZRbeGp1fD3sdPBy+b59z5pyh
+i/1h8/Httdb/W3vttdfe++tQ+R+tofPvduC/gHpBXAbsBA4CJ4C54+7RPwer
+gRFgH7AVuKxM8bQMyZXAZuAQsAX4KQhPFWwHJpASZzEwHZhXqKmWteUmPJjR
+OVXap+qoOqlInlvOU+O5p42z+2/F10AHMKVImAtiVzxHMjpvAwJLavo7gIGQ
+PdmIl1XoDbveEvnlwDHg/SZ5AYaDu6wNldhVYtBVJMzVxEawEvgMeBx4k7T5
+ADwN3ANsAlY1ybkjnteXyJ8jDWZFk7wAbwDvFPTfC8wA3hsDZ7YmPhM18bo6
+9WIg9Hri/bF4f1XtHEP96VYPq98XyO4K7mfbWO+eCs6XMv5uDJ05RfIy4o6q
+YjqtjhMXqkfU79QV8bG31NNbGNhQ8Eyv6puo/qDuVye3IXgd6ob4zvp4L9Nd
+FXoPNRLERWq/+nEYbWzQobWexLB6VosDfCK4llT1rYu+njYEsEt9OfjWNaB/
+gSlJRtTX1DXqJWVBrCxh1d3qVQ069WiV3aw2DPK2mgHOUv9UPzSfMY20bnVL
+8Pc1YXe/qcxUsKAsiKjnqItNS/RH06zlyJealv3eIH++DUGcEpxD8b5NPaFe
+0yLvBHUw/Oxtwq4yqTtMidVdLc8Zbg7DqzM6t5oyZLd6nrrHlPLtyMav1EPq
+svBjQ4t8E9V3Y3IeaNK2P3xYWCTPGa4Jw5tK5Dea0vtb9fzouzNstpbYDIS8
+pwHHXwjdP9Sf1akZ3Xq8k021+rh69xgm4MXgn1kkz50TKwfMogP5HGCQ9GPi
+FmBv9L8OfEK6a84HPqixq3Adb+D0NQzcB0wCHgF+zejW430FuAHYBVxK+rlQ
+i7WkQ3zz/Jno90X0F9T0z1T3qQfU2QV2C8NuZ4Hsc/V3U82rN/vzg2eX9TeT
+HG9nZHMO++vwVzL94mYzsTIrtffFb4BpGbttpGtfLc4FZgP9wIGMfQUrgVFg
+OelKVoZ6vKPA2Q18L4dKDI4WSjPRvyOiP6he5NhuH9XtdvWo9Q/veHIzWd9m
+3mbbGeo89WC0whjkCM407brVmDsOjlbaDNPNYJN6TP3S1g/trbTVNWPvK9PN
+LecjwLXAzcAVpAI/nj9lF5GK+2+knxkPA4fH8Xv1sJ20kfwCfAR8Uab4F81M
+UMyFSpbuAAAAAElFTkSuQmCC
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">69</span><span style=" color:#00ff00;">]:</span> type(g)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">69</span><span style=" color:#ff0000;">]:</span> g</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">70</span><span style=" color:#00ff00;">]:</span> sympy.sin</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">70</span><span style=" color:#ff0000;">]:</span> sin</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">71</span><span style=" color:#00ff00;">]:</span> sympy.sin(x)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">71</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAADwAAAAUCAYAAADRA14pAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAMtSURBVFiF
+5ZhbSJRBFMd/ayWZhZUWBFFLSPZkRBd6yCAwje5UL0FRZElEl5cIEqKXiB7s
+Ar2JgQqBQmFBSElhN6JMSYpuUGEX0kzKHkwL49/DzNq0fvt9qyu50IFhdv7n
+MufMzJkz34Yk8T9Rykg78K9pKAGHAQEVw+rJH6oCOoD0BGzMx/hYFM1Ith1e
+AGwBTgDdCdhpBi4Bx4Dxf3EkDbaNkTRH0rQh6Aa1ekldktKGwdYiGSpx8VAS
+XVqzgRdAOVA8TDafA+OAWcAvGHik1wI3gDbgB/ARuAXscWTCDMxhFwsD1UAn
+0As0AavjcG4HEAJqYvDr7RwbovCQnVeYVHCpGpgB5PcjznYX2yPQJqlM0nFJ
+5ZIaJT105MJWrsIDa5DUIem+pNOSKiX1SvolaVnAEWyS1CcpPQZ/rrXzTNIo
+Bz9p5y7z0Mm3vNII5jKbJf2QNNVDMSvOgCXpaJRuocXrfIJNt8E+CViUCmtr
+ux2X2HGNpBQP+QzLb4wVcLekSQGT+gXcqr9XP9LeSur0sTnb6tcHzD1dUo+d
+Z6/VuSop1UenR1J7ZOzm8HlMgj8FTgPrgSlx5J5LLdjLIYreA5N89DJt/zXA
+/gfgDDATOAvcw+T0Tx+dL0BWZOAGfArYBrwD9gO1wCegAVMf46GuGHgf/jW/
+x/Zj45jjs/O7CPgeIJ/m2B/gRBWwGLPiq4BzwFLgGjA1DmeGSh22z/SVgs1A
+KdBuxwcC5FOAiY79mKveBdQBuzBX/mQgL8B4ItSG2bkcH5mVQCUm5XIxNXsn
+MMdHJwdTtloigBvwCmC0h1JkZ4OOTiIk4DYm17I9+EuAC5gcLsAszhGMv9G1
+16XFtm+IAG6A1ZiHwl2gFbMyecBCzNv0+qDDGBxdBDYChcArB58LXAG+Acsx
+pwHMAjQB66yfdzxsFmAu0cv9iHN975ZUK+mNpO+Svkh6JOmQpAlxliUXc9tN
+y/crOam2fDxwsGyLfZWU66ETeVjc9+Bl2JJ0ycX9HBiJdtgGMG8YbO2ztvJc
+PJk+HsCUpZfAY2BNAnbSgNeYOr3JZSTb93AvsBWTm4n8ARAGyoCD0YzfXrvw
+pQPmyGoAAAAASUVORK5CYII=
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">72</span><span style=" color:#00ff00;">]:</span> sympy.sin(pi * 1.5)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">72</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAB4AAAAPCAYAAADzun+cAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAChSURBVDiN
+7dQxDkFBFIXhj6jVViA6tdoGFDahlCgV9mADCvtQWIfkFaJSiUJ3FZ5GHpkn
+ExT+5GSmOHNvTmbuNCLCN2hmrjfGElucEFhXGVuZG8/Rxxl79J4Zcyeeoos2
+Jq+MuRNvUo25Eyfzb1y4jUCqKkclhcfHtcOlxvlDrsbDdwvV5Wfu+GPk/kBG
+paBTrgOsyv0RMxARObWI1xR37xUvgIBBtxpNLwAAAABJRU5ErkJggg==
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">73</span><span style=" color:#00ff00;">]:</span> n = sympy.Symbol(&quot;n&quot;, integer=True)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">74</span><span style=" color:#00ff00;">]:</span> sympy.sin(n * pi)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">74</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAA0AAAAQCAYAAADNo/U5AAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAADdSURBVCiR
+pZM7TkMxEEXPS0kEj08LDShhC9Tsh3VAhaCjCltIGwo69pCEAmhAlIiPBAWH
+gnmR5TwrCoxkXfl6jqUZjyuVZaPT4m0DA+AR+ATugTNgY5ahpmtPffY3huqJ
+eh37sbqlzkGjSDjK/NPwL3JoNw7u1E4Grapv6rvaTWs6DL0CvrM6X4EbYAU4
+SKH90Gmhabeh/RSqQ18KUOOvt7W8FFWoKdTcVNMea01eCk1C+wWoFzrNH3ZR
+yz/U7r8ft22MjpMxmpTGCHVHvVSf1C/1QT1XN5uc6i9f4weH2keqW0Tu+AAA
+AABJRU5ErkJggg==
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">75</span><span style=" color:#00ff00;">]:</span> h = sympy.Lambda(x, x**2)</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">76</span><span style=" color:#00ff00;">]:</span> h</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">76</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAEsAAAAVCAYAAAAOyhNtAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAMDSURBVFiF
+7ZhNaBVXFMd/LxZJTDSgFrRYKRhERRSxFCwWiroq2EURRKjix1Jd6casVAQF
+ddOFgispiA20ILhpQ5et+FXqB1QElbiQqJFWhBrR2J+LuU8n47yZm7yX9Plx
+4PDenHPm//73f8+9c+dVVN5bnLX83wTG0XYBF4BHwABwGlg4EoB3SawvgSPA
+58AKYAj4FZgajaDm+ffqfbW9Rv5t8A71ubo6E19qYluy9+R11qfAt8AB4N96
+p7OJbTLJyvo7E/8DOAXsAzqGZXIU71Ufqm1NMPtj6T3qn+qEnNxnobu60/Fs
+0Vz1P/VYEwxmLP2g2q92FdRcU2+nxcwuw81ABejJadteQOCbTLwCHA+5AzVa
+fi3wddGaCNYFTIuoq4fTYWADsBK4UYD9AzAbWPUyklHzojpk/sa+2GRD/CvT
+uodDyxZ1Y596tmS2O9U76iV1WmSHjJTTd+o9dUEE9qqAcagaSyfbg1BXCwCO
+B4CN4bo7XPeoLXWKhboj4F1Wp0cKFsvpiPpIXaHOSHlHDdzOgHM+T6y5Idlb
+QGyWOhgGvy3U/6xOLBlQn3pObY3wXSMULJZTLdtdgD2o3s0Ta1m4uaeE3P7U
+D/2uTooYUF8B2SI7HYE9Wk4xfsdktaHyQWpDGwyfrSWb6kDq+xbgcUl91R4A
+v0TUTebVw+BsJPZoOZVZG690GdZZH4WZ+a1A6XUmR4v+UHs0cob6jNuzpqhn
+AvbeSOzRcirzloB7sxpLJysmrzgDNW7+Sn1q8gD40OQc8kyd1yCxOkKN6p7I
+AdXDqcznBy4/5YmF+mMoyB7WlquP1VvqzBBbE2pPNUisCeqJEQhVL6cy3xSw
+ttUSa10o2JqKLTZ5/elX52TqL4T6LxpArtrdMXXjwemkyeb+cS2xJpo8Ks+F
+665w/Y+6KAewenCL2Y8a5ePBqdPk2DCsQ/MKq+ecJeMoQLP59qDBsO6s6Gt/
+K7cC14ErwOoGPYLfJGsDbgJngDXpRN7/WU+A9cBFoH3MqTWffQIcA3ZmEy8A
+Yes8/tee+6gAAAAASUVORK5CYII=
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">77</span><span style=" color:#00ff00;">]:</span> h(5)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">77</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAABoAAAAQCAYAAAAI0W+oAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAGNSURBVDiN
+vZS/S1ZRGMc/r7xgNDSUpFMNtRX0JyguIdGg4hY52BZEmxJE/gEOgoMODm6O
+DlGLoCKNgZCUQVIvLgkRKJlG/vg43OeV4+W+vlehvvBwzz3nc+73Oc8591RU
+/odakvY14AkwB6wDe8A28A4YyrF11QAbxGYKVpP2ADAJfAcWgQ2gHegDpoGe
+YPIl2AbGC5LYOfWm1qNbfai2JH2oHeqGmfpzY7UImkVajgXgNXCUy2wTmIp2
+V0HmpVRtjgCwH8+DgrFW4BFwA/gNfACWgcNTVIllV9XVKN39gtIV6avambJl
+jMZi8puCsVext+3qZfWuOqUeqbvqvbJGz8JkTb1aZtNzyc2VMXoa8Eezk1fW
+BPV2zP3ZzOh5gKvq9XOaoF6J+X/OMhoOaEVtu4AJZodG9VMjo5cBvC+xJ3ca
+MDfVL/GdF/X+ip7cKIPATJz/CbKrJa9aMACjwAjZdfUN+AXcAh4Al4C3QC/w
+N/8fjdpcSwnfqc6qn9UtdV/9oc6rj9VKutJ0Rf9UxxQ1KHfjpNITAAAAAElF
+TkSuQmCC
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">78</span><span style=" color:#00ff00;">]:</span> h(7)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">78</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAABoAAAAQCAYAAAAI0W+oAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAGeSURBVDiN
+vdVBiE1hFAfw32OU2WjIwsbCSJGVKVZWsmEhzcrC1JhmaxayUsROacrsxwIb
+iyklO1ZS7GxQyCRJCKnJTBJ/i3vvvEv3vvdKzanT993/OfU/53znnNtJYi1k
+XR/7BFLqdIO9gyk8xhKW8QQzWP+XZ5I23Z7kW5KlFDLd4HOjtH1MMp9kLsmz
+EltI0ql820g6Se4neZ3kSgvR8RJfTLK1hm9Icru0TVZ4W+lmcAin8L3FZ7w8
+Z/G5hv/E+fJ+ugKbiPbgMubwoIUEtpXnYoOtwsYw0kQ0hJt4i3M9SOhmsaPB
+Nlq7724iuoB9mMRKH6K75XkGW/4J9lLte3MFVnJAkcUsHvUhgVs4iSN4jjuK
+9j6MnXiFXfhFN6OqZC91H7Kf/MYxnMUHxcxN4R0O4kvp9wmr7T2SweVqj9mr
+dDjJSpLlst1XS/cD11oiH1O820O8MFhZJ7AR1xXt3nMzVHqxx2bY1IDtT/I1
+xUYZrfChXmENIPcU3flUsev24qiiQuNqM/a/RAs4oei+YbzHvGLg39QdO1mj
+38QfDXiYiVxNtdkAAAAASUVORK5CYII=
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">79</span><span style=" color:#00ff00;">]:</span> h(x + 1)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">79</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAEsAAAAVCAYAAAAOyhNtAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAMTSURBVFiF
+7ZhNSFVBFMd/T0U0jSJaRES0sCwIM4rIyNAyg0CKaiP0IdmiRW2iIIXARZBQ
+QRQY2MbKRYaBUYuQQKgMQyMLyqKEFxQvMvqkbKH+W8zou1zve977LN8r+sNh
+7j1z5szMmXPOPXNDkvgPf0hL9gJSCDVAN/AVGABuAEudAv+NFUUJ0ACsAdYD
+Q8BtYNaYhCQvuiTpvaScGP1/I62QQbVP+VxJw5IqRnlenrUS2AnUA9//9HFO
+EjuAc8BdTPgIaI4h+xBoA44DuT50T8dE3scxjodF2yV9lpSdAt4wEfVab/km
+qc8+N8eRX2Vlan3obpH0SFL6KM8tsEjSiKTGKdpslV18SYLjSyUtlBSyOiYy
+Ftaor51G8KCTkiKS8px8dxjuBUJAi4dbtls33+bih4Am21fvw71/JzqAl3Zu
+v7gCzAfKYvSfBnYDG4BXzg63scqAYaDLQ8kRYAQT8+kO/ilgD3ABOBpg0clC
+p203evSdxeTrUuCZu9NprBygEOjDO7E/Bi4DS4BdllcLHAKuAvsTWHgy0G3b
+dS5+A1AFVGKS+hxL0Y+BK19JJsHHiuV5kgYlhSUdsPK3JGUmKWc5yW/Owu7h
+nYsXC3WjMk7hItvZMsFEJxyKOiVN87mZcJwFeaHJp95EjPVW0lBA/WQ43HDQ
+tlkTuPGA47ka+OHT/c8AM128QmALcBEIu/p6fepNBNlE9+sfDsvNtSdzL451
+K2VKi4iVPR/0dFyUjDBMs3voDzqHM8FHMF6TH8OumzEe8BQoAJ4D+4DFgU8o
+ucjHlDuBPddpLAF3gNlAnktuLdAKvAHKMUY9BmQw9bXVZLHath1BB2a43q8B
+24FNRAuyZcBN4AumNolYfivQg8k5xZj72VRjqyUwn3mAIkyRDPABOOwaU46p
+Ja8Hns0Vl5kyn9QH9j3Pvn+SVOARx2U2T3QlKWfVKT7CLvkZMmVDWyLzeTFr
+7ETLE9xAKtNBu7fiRMaHpHHXqizgBfAEqAjsqqmLbKAfuI/5tRMYXv+zfmKu
+Mz2YK9C/ggVAI+NzmG/8AtY5vU4x8KXwAAAAAElFTkSuQmCC
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">80</span><span style=" color:#00ff00;">]:</span> simplify(h(x+1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Traceback <span style=" color:#00ffff;">(most recent call last)</span>:</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ffff;">  Cell </span><span style=" color:#00ff00;">In[80], line 1</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ffff00;">    simplify(h(x+1))</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#00ffff;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">NameError:</span> name 'simplify' is not defined</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">81</span><span style=" color:#00ff00;">]:</span> sympy.simplify(h(x+1))</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#ff0000;">Out[</span><span style=" font-weight:600; color:#ff0000;">81</span><span style=" color:#ff0000;">]:</span> </p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAEsAAAAVCAYAAAAOyhNtAAAACXBIWXMAABJ0
+AAASdAHeZh94AAAAO3pUWHRTb2Z0d2FyZQAACJnzTSwpyMkvyclMUihLLSrO
+zM8z1rPUM9JRyCgpKSi20tfPhSvQyy9K1wcAqccRLebeE9kAAAMTSURBVFiF
+7ZhNSFVBFMd/T0U0jSJaRES0sCwIM4rIyNAyg0CKaiP0IdmiRW2iIIXARZBQ
+QRQY2MbKRYaBUYuQQKgMQyMLyqKEFxQvMvqkbKH+W8zou1zve977LN8r+sNh
+7j1z5szMmXPOPXNDkvgPf0hL9gJSCDVAN/AVGABuAEudAv+NFUUJ0ACsAdYD
+Q8BtYNaYhCQvuiTpvaScGP1/I62QQbVP+VxJw5IqRnlenrUS2AnUA9//9HFO
+EjuAc8BdTPgIaI4h+xBoA44DuT50T8dE3scxjodF2yV9lpSdAt4wEfVab/km
+qc8+N8eRX2Vlan3obpH0SFL6KM8tsEjSiKTGKdpslV18SYLjSyUtlBSyOiYy
+Ftaor51G8KCTkiKS8px8dxjuBUJAi4dbtls33+bih4Am21fvw71/JzqAl3Zu
+v7gCzAfKYvSfBnYDG4BXzg63scqAYaDLQ8kRYAQT8+kO/ilgD3ABOBpg0clC
+p203evSdxeTrUuCZu9NprBygEOjDO7E/Bi4DS4BdllcLHAKuAvsTWHgy0G3b
+dS5+A1AFVGKS+hxL0Y+BK19JJsHHiuV5kgYlhSUdsPK3JGUmKWc5yW/Owu7h
+nYsXC3WjMk7hItvZMsFEJxyKOiVN87mZcJwFeaHJp95EjPVW0lBA/WQ43HDQ
+tlkTuPGA47ka+OHT/c8AM128QmALcBEIu/p6fepNBNlE9+sfDsvNtSdzL451
+K2VKi4iVPR/0dFyUjDBMs3voDzqHM8FHMF6TH8OumzEe8BQoAJ4D+4DFgU8o
+ucjHlDuBPddpLAF3gNlAnktuLdAKvAHKMUY9BmQw9bXVZLHath1BB2a43q8B
+24FNRAuyZcBN4AumNolYfivQg8k5xZj72VRjqyUwn3mAIkyRDPABOOwaU46p
+Ja8Hns0Vl5kyn9QH9j3Pvn+SVOARx2U2T3QlKWfVKT7CLvkZMmVDWyLzeTFr
+7ETLE9xAKtNBu7fiRMaHpHHXqizgBfAEqAjsqqmLbKAfuI/5tRMYXv+zfmKu
+Mz2YK9C/ggVAI+NzmG/8AtY5vU4x8KXwAAAAAElFTkSuQmCC
+" /></p>
+<br/>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">82</span><span style=" color:#00ff00;">]:</span> </p></body></html>
